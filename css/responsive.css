@@ -1,0 +1,1377 @@
+/* Additional Media Query */
+@media only screen and (min-width: 1200px){
+  .container{
+    max-width: 1170px;
+  }
+}
+@media (max-width: 991px){
+  .category {
+    margin-bottom: 0;
+  }
+  .single_product_details{
+    padding-top: 25px;
+  }
+  .product_item_details, .upsell_products{
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
+  .product_item_details, .upsell_products{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* Medium Layout: 992px. */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+.container{
+    width: 970px;
+}
+.left_header_top > ul > li > a {
+  padding: 5px;
+}
+nav ul > li > a {
+  margin-left: 17px;
+}
+.payment > a {
+  margin-right: -1px;
+}
+.footer_widget > ul > li {
+  font-size: 10px;
+}
+.footer_widget > ul > li > i {
+  margin-right: 12px;
+}
+.footer_top_widget input {
+  width: 64%;
+}
+.d_menu {
+  left: -30%;
+}
+.footer_top .social_icons > li {
+  margin-right: 5px;
+}
+.footer_top .social_icons a {
+  padding: 6px 10px;
+}
+body#list_page .single_list_image figure.effect-lexi figcaption::before {
+  left: -17%;
+  top: -15%;
+}
+.comment_form > input {
+  margin-left: 20px;
+}
+body#single-product .single_product_details {
+  margin-left: 20px;
+}
+body#single-product .sorting select {
+  font-size: 12px;
+  padding: 9px 31px 9px 10px;
+}
+body#single-product .product_color > span {
+  font-size: 14px;
+}
+.cart_fav .social_icons > li {
+  margin-left: 2px;
+}
+body#single-product .social_icons a.add_cart_btn {
+  padding: 7px;
+}
+body#single-product .social_icons a{
+  padding: 5.6px;
+}
+body#single-product .product_color .sorting {
+  margin-left: 5px;
+}
+body#single-product .product_social .social_icons a {
+  padding: 10px 12px;
+}
+body#single-product .single_tab_content .effect-lexi figcaption::before {
+  height: 27%;
+  left: -10%;
+  width: 50%;
+}
+body#single-product .upsell_products .single_tab_content .add_to_cart {
+  left: -6%;
+  top: 4%;
+}
+.contact_mail_area .send_mail input[type="text"], .contact_mail_area .send_mail input[type="email"] {
+  width: 46.5%;
+}
+body#gird_page .single_tab_content figure.effect-lexi figcaption::before {
+  bottom: 28%;
+  left: 22%;
+}
+body#gird_page .category_products .single_tab_content .add_to_cart {
+  bottom: 22.5%;
+  left: 28%;
+}
+body#gird_page .single_tab_content .discount::before, body#index_two .single_tab_content .discount::before {
+  height: 105%;
+  left: 43%;
+  padding-right: 67px;
+}
+/* start special add to cart*/
+body#index_two .single_tab_content figure.effect-lexi .add_to_cart, body#index_three .single_tab_content figure.effect-lexi .add_to_cart {
+  bottom: 20%;
+  left: 28%;
+  width: 47%;
+}
+body#index_three .single_tab_content figure.effect-lexi .add_to_cart{
+  bottom: 20%;
+  left: 27%;
+}
+
+
+body#gird_page .category_products .single_tab_content figure.effect-lexi .add_to_cart {
+  bottom: 28%;
+  left: 23%;
+  width: 52%;
+}
+
+/* end special add to cart*/
+
+body#index_two .third_product_row .effect-moses:hover h2, body#index_two .third_product_row .effect-moses h2, body#index_one .third_product_row .effect-moses:hover h2, body#index_one .third_product_row .effect-moses h2, body#index_three .third_product_row .effect-moses h2 {
+  font-size: 23px;
+}
+body#index_two .third_product_row .effect-moses:hover p, body#index_two .third_product_row .effect-moses p, body#index_one .third_product_row .effect-moses:hover p, body#index_one .third_product_row .effect-moses p, body#index_three .third_product_row .effect-moses p {
+  font-size: 20px;
+}
+.new_featured_sales .nav-tabs > li > a, .new_featured_sales .nav-pills > li > a, .product_item_details .nav-tabs > li > a, .product_item_details .nav-pills > li > a {
+  padding: 10px 8px;
+}
+body#index_two .single_tab_content figure.effect-lexi figcaption::before {
+  left: 25%;
+  bottom: 21%;
+}
+body#index_one .first_product_row .single_product .grid figure.effect-lexi figcaption::before {
+  top: -59%;
+  left: 50%;
+}
+body#index_one .second_product_row .effect-steve > figcaption > h2, body#index_one .first_product_row .single_product .grid .effect-lexi > figcaption > h2{
+  font-size: 30px;
+}
+body#index_one .second_product_row .effect-steve > figcaption > p{
+  font-size: 18px;
+}
+body#index_one .first_product_row .single_product .grid .effect-lexi a{
+  font-size: 21px;
+}
+body#index_one .first_product_row figure.effect-julia:hover p {
+  -webkit-transform: translate3d(96%, 380%, 0px);
+  -ms-transform: translate3d(96%, 380%, 0px);
+  -o-transform: translate3d(96%, 380%, 0px);
+  transform: translate3d(96%, 380%, 0px);
+}
+body#index_one .second_product_row .effect-honey > figcaption > h2 {
+  font-size: 31px;
+  top: 78%;
+}
+body#index_one .second_product_row .effect-honey i {
+  font-size: 17px;
+}
+.third_product_row figure.effect-winston:hover figcaption::before {
+  top: -84%;
+  -webkit-transform-origin: 0 94% 0;
+  -moz-transform-origin: 0 94% 0;
+  -ms-transform-origin: 0 94% 0;
+  -o-transform-origin: 0 94% 0;
+  transform-origin: 0 94% 0;
+}
+body#index_three .single_tab_content figure.effect-lexi figcaption::before{
+  bottom: 21%;
+  left: 24%;
+}
+body#index_three .single_tab_content .discount::before {
+  height: 110%;
+  left: 45%;
+  padding-right: 75px;
+}
+
+/* start cart & search box*/
+
+
+.right_header_top > ul > li:first-child .search-form .form-group {
+  width: 55%;
+}
+.right_header_top > ul > li > a {
+  font-size: 10px;
+}
+
+
+/* End cart & search box*/
+
+
+
+ 
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.column {width:750px}
+.logo{
+	padding: 10px 0;
+}
+.logo {
+  width: 16%;
+}
+.nav_wrap {
+  width: 84%;
+}
+.d_menu{
+	left: -150%;
+}
+nav ul > li > a {
+  font-size: 13px;
+  margin-left: 10px;
+  padding: 35px 10px 21px 0;
+}
+.megamenu1 span {
+  width: 30%;
+  margin-bottom: 20px;
+}
+.first_product_row .single_product .grid{
+	background: none;
+}
+.grid > figure > img{
+	max-width: auto;
+	height: auto;
+}
+
+/*contact page*/
+.contact_mail .send_mail input, .contact_mail .send_mail input{
+	width: 100%;
+}
+
+/*footer*/
+.social_icons > li {
+  margin-right: 9px;
+}
+.latest_tweet i {
+  min-height: 72px;
+}
+.footer_top_widget input {
+  width: 52%;
+}
+.footer_widget {
+  margin-bottom: 30px;
+}
+.footer_menu .footer_nav > ul > li > a {
+  padding: 0 4px;
+}
+
+/*about us page*/
+.welcome_img {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*bloglist page*/
+.our_blog .sidebar_widget {
+  float: left;
+  width: 50%;
+  padding-right: 20px;
+}
+.our_blog .sidebar_widget:nth-child(even){
+	padding-right: 0px;
+}
+.blog_sidebar {
+  margin-top: 50px;
+}
+.our_blog .sidebar_widget:last-child {
+  clear: both;
+}
+
+/*checkout page*/
+.various_address{
+  margin-top: 15px;
+}
+.various_address input {
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  width: 48%;
+}
+.various_address input:nth-child(even) {
+  margin-right: 0px;
+}
+.checkout {
+  margin-bottom: 35px;
+}
+
+/*gird page*/
+body#gird_page .single_tab_content .discount::before {
+	height: 65%;
+	left: 22%;
+	padding-right: 33px;
+	padding-top: 46%;
+	top: -9%;
+}
+body#gird_page .category_products .single_tab_content {
+  margin-bottom: 60px;
+}
+body#gird_page .category_products .single_tab_content figure.effect-lexi figcaption::before {
+  bottom: 13%;
+}
+body#gird_page .category_products .single_tab_content .add_to_cart {
+  bottom: 10%;
+  left: 23.5%;
+}
+body#gird_page .single_list_image .single_tab_content .add_to_cart {
+  left: -14%;
+  top: 6%;
+}
+body#gird_page .single_tab_content .favourite {
+  right: 5%;
+  top: 35%;
+}
+
+/* start special add to cart*/
+body#gird_page .category_products .single_tab_content figure.effect-lexi .add_to_cart {
+  bottom: 12%;
+  left: 30%;
+  width: 30%;
+}
+body#index_two .single_tab_content figure.effect-lexi .add_to_cart, body#index_three .single_tab_content figure.effect-lexi .add_to_cart {
+  bottom: 34%;
+  left: 21%;
+  width: 59%;
+}
+/* end special add to cart*/
+
+
+
+/*our blog page*/
+.our_blog_area .comment_form > input{
+	width: 30.6%;
+}
+
+/*first home pages*/
+.products{
+  max-width: 90%;
+  margin: 0 auto 40px;
+}
+.footer_slider {
+  margin: 0 auto;
+  max-width: 90%;
+}
+.grid figure {
+  margin: 0 auto;
+}
+.grid > figure > img {
+  width: 100%;
+  height: auto;
+}
+.first_product_row .single_product img{
+  height: 220px;
+}
+.first_product_row .single_product .grid .effect-julia > figcaption > h1, .first_product_row .single_product .grid .effect-julia > figcaption > h1 > span {
+  font-size: 30px;
+  left: 56%;
+  top: 32%;
+}
+.first_product_row figure.effect-julia:hover p {
+  -webkit-transform:  translate3d(25%, 250%, 0px);
+  -ms-transform:  translate3d(25%, 250%, 0px);
+  -o-transform:  translate3d(25%, 250%, 0px);
+  transform:  translate3d(25%, 250%, 0px);
+}
+.first_product_row .single_product .grid .effect-lexi > figcaption > h2 {
+  font-size: 20px;
+  left: -3px;
+  top: 55%;
+}
+.first_product_row .single_product .grid .effect-lexi a {
+  font-size: 15px;
+}
+.first_product_row .single_product .grid figure.effect-lexi figcaption::before {
+  top: -37%;
+  left: 50%;
+  height: 150px;
+  width: 150px;
+}
+.first_product_row .single_product .grid .effect-lexi > figcaption > p {
+  font-size: 12px;
+  right: -2%;
+  top: 9%;
+}
+.second_product_row .single_product img{
+  height: 190px;
+}
+.second_product_row .effect-honey > figcaption > h2 {
+  bottom: 4%;
+  font-size: 20px;
+  left: 17%;
+  line-height: 18px;
+  padding: 10px;
+  width: auto;
+  margin-top: 5px;
+}
+.second_product_row .effect-honey i {
+  bottom: -17px;
+  font-size: 12px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.second_product_row .effect-steve > figcaption {
+  width: 100%;
+  -webkit-transform: translate3d(0%, 0%, 0px);
+  -ms-transform: translate3d(0%, 0%, 0px);
+  -o-transform: translate3d(0%, 0%, 0px);
+  transform: translate3d(0%, 0%, 0px);
+  padding: 10px;
+}
+.second_product_row .effect-steve > figcaption > h2 {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 20px;
+  right: -27%;
+  top: 40%;
+}
+.second_product_row .effect-steve > figcaption > p {
+  bottom: 17%;
+  font-size: 15px;
+  margin: 0;
+  right: 40%;
+  -webkit-transform: translate3d(95%, 40%, 0px);
+  -ms-transform: translate3d(95%, 40%, 0px);
+  -o-transform: translate3d(95%, 40%, 0px);
+  transform: translate3d(95%, 40%, 0px);
+  width: 45%;
+  padding: 10px 20px;
+}
+.third_product_row .effect-winston img {
+	height: 100%;
+  	width: 100%;
+}
+.third_product_row .effect-winston img, .third_product_row .effect-moses img {
+  width: 100%;
+  height: 300px;
+}
+.third_product_row figure.effect-winston:hover figcaption::before {
+  top: -84%;
+  -webkit-transform: rotate3d(0, 0, 1, 36deg);
+  -ms-transform: rotate3d(0, 0, 1, 36deg);
+  -o-transform: rotate3d(0, 0, 1, 36deg);
+  transform: rotate3d(0, 0, 1, 36deg);
+  -webkit-transform-origin: 0 99% 0;
+  -moz-transform-origin: 0 99% 0;
+  -ms-transform-origin: 0 99% 0;
+  -o-transform-origin: 0 99% 0;
+  transform-origin: 0 99% 0;
+}
+.third_product_row .effect-winston figcaption p {
+  top: 3%;
+}
+.third_product_row .effect-winston h2{
+  -webkit-transform: translate3d(-27%, 300%, 0px);
+  -ms-transform: translate3d(-27%, 300%, 0px);
+  -o-transform: translate3d(-27%, 300%, 0px);
+  transform: translate3d(-27%, 300%, 0px);
+}
+.third_product_row .effect-winston h2, .third_product_row .effect-winston h2 > span{
+	font-size: 20px;
+}
+.third_product_row .effect-winston h2 > span{
+  -webkit-transform: translate3d(0%, 0%, 0px);
+  -ms-transform: translate3d(0%, 0%, 0px);
+  -o-transform: translate3d(0%, 0%, 0px);
+  transform: translate3d(0%, 0%, 0px);
+}
+.third_product_row figure.effect-winston:hover h2 {
+  -webkit-transform: translate3d(0%, 90%, 0px);
+  -ms-transform: translate3d(0%, 90%, 0px);
+  -o-transform: translate3d(0%, 90%, 0px);
+  transform: translate3d(0%, 90%, 0px);
+}
+.third_product_row figure.effect-winston:hover h2 > span{
+	-webkit-transform: translate3d(0%, 00%, 0px);
+  -ms-transform: translate3d(0%, 00%, 0px);
+  -o-transform: translate3d(0%, 00%, 0px);
+  transform: translate3d(0%, 00%, 0px);
+}
+.half_row .effect-julia > img {
+  width: 100%;
+  height: auto;
+}
+.half_row .effect-julia > figcaption > h2 {
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  left: 12px;
+}
+.half_row{
+  margin-bottom: 30px;
+}
+.third_product_row figure.effect-julia:hover p {
+  -webkit-transform: translate3d(-27px, 1px, 0px);
+  -ms-transform: translate3d(-27px, 1px, 0px);
+  -o-transform: translate3d(-27px, 1px, 0px);
+  transform: translate3d(-27px, 1px, 0px);
+  width: 144%;
+  font-size: 12px;
+}
+.half_row.half_last_row h3 {
+  font-size: 20px;
+}
+.third_product_row .effect-moses:hover h2, .third_product_row .effect-moses h2 {
+  font-size: 13px;
+	left: 5%;
+	top: 32%;
+	width: 55%;
+  line-height: 24px;
+}
+.third_product_row .effect-moses:hover p, .third_product_row .effect-moses p {
+  font-size: 13px;
+  padding-top: 20px;
+  right: 5%;
+  width: 55%;
+  top: 54%;
+}
+
+/*second home page*/
+.new_featured_sales .nav-tabs, .new_featured_sales .nav-pills, .product_item_details .nav-tabs, .product_item_details .nav-pills {
+  width: 51%;
+}
+body#list_page .single_tab_content figure.effect-lexi figcaption::before {
+  bottom: 12%;
+  height: 140px;
+  left: -5.5%;
+  width: 140px;
+}
+body#list_page .single_tab_content .add_to_cart {
+  bottom: 28%;
+  left: -11%;
+  top: 35px;
+}
+body#list_page .single_list_details {
+  margin-left: -15px;
+  margin-top: 20px;
+}
+body#index_two .single_tab_content .discount{
+	padding: 0;
+}
+body#index_two .single_tab_content .discount:before, body#index_three .single_tab_content .discount:before {
+	height: 0%;
+	left: -32%;
+	top: -37%;
+	padding: 45px;
+	width: 0%;
+}
+.single_tab_content .favourite {
+  right: 15%;
+  top: -4%;
+}
+.latest_post .product-description > p {
+  margin-top: 15px;
+}
+body#index_two .new_featured_sales, body#index_three .new_featured_sales {
+  margin: 10px 0;
+}
+body#single-product .sorting select {
+  padding: 9px 31px 9px 2px;
+  font-size: 12px;
+}
+body#single-product .product_size .sorting {
+  margin-left: 2px;
+}
+body#single-product .social_icons a.add_cart_btn {
+  padding: 7px;
+}
+body#single-product .social_icons a{
+  padding: 5.6px;
+}
+body#single-product .product_social .social_icons a {
+  padding: 10px 12px;
+}
+
+body#single-product .single_tab_content figure.effect-lexi figcaption::before {
+  left: -5%;
+}
+body#single-product .single_tab_content figure.effect-lexi figcaption p {
+  left: -11%;
+  top: 3%;
+}
+body#index_two .single_tab_content figure.effect-lexi figcaption::before {
+  bottom: 35%;
+  left: 13%;
+}
+body#index_three .single_tab_content figure.effect-lexi figcaption::before{
+  bottom: 34%;
+  left: 13%;
+}
+body#index_two .single_tab_content .add_to_cart, body#index_three .single_tab_content .add_to_cart {
+  bottom: 24%;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* Mobile Layout: 320px. */
+/*================================================== */
+@media only screen and (min-width: 100px) and (max-width: 767px) {
+
+.column {width:300px}
+.page-nav1 {
+    background: transparent;
+    padding: 0px;
+    border-radius: 2px;
+    position: relative;
+    margin: 0 -8px;
+}
+
+.aside {
+    background: transparent;
+    padding: 50px 10px 50px;
+}
+
+.color-filter .col-md-6 {
+	width:50%;
+	float:left;
+}
+
+.p-filter {
+    border-radius: 1px;
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 72px;
+}
+
+.cat .p-list li {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.page-nav span {
+    float: right;
+    position: relative;
+    top: -15px;
+}
+
+.page-nav1 span {
+    float: none;
+    position: relative;
+    top: 0px;
+}
+
+.page-nav1 .col-md-5, .page-nav1 .col-md-3 {
+	display:none;
+}
+
+.container {
+	max-width: 300px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.logreg {
+	display: none;
+}
+
+.tw-left ul {
+	padding: 0px;
+	margin: 0 -14px;
+}
+
+.tw-left ul li {
+	float: left;
+	margin: 0 13px;
+}
+
+.tw-right ul {
+	padding: 0px;
+	float: right;
+	display: table;
+	width: 100%;
+}
+
+.tw-right ul li {
+	margin-left: 1.5%;;
+	margin-right:1.5%;
+	width: 47%;
+}
+
+.side-content .no-padding {
+	padding:0 15px !important;
+}
+
+.c-product h4 {
+	margin-top: 20px;
+}
+
+#cp .aside {
+    margin: 40px 0px 0 15px !important;
+}
+
+.tw-selectParent1 {
+	width: 84px;
+	overflow: hidden;
+	margin: 20px auto;
+}
+
+.tw-right .cart-li {
+	display: none;
+}
+
+.logo {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+.logo h1 {
+	margin: 60px 0px 40px;
+	width: 100%;
+	display: table;
+}
+
+.logo h1 img {
+	display: table;
+	margin: 0px auto;
+}
+
+.header_bottom_area {
+	height: auto;
+}
+
+.search input {
+	width: 100%;
+	height: 37px;
+	margin: 15px 0px 20px;
+	float: none;
+}
+
+.nav_wrap {
+	width: 100%;
+	float: none;
+}
+
+.no320 {
+	display: none !important;
+}
+
+.only-for-mobile {
+	display: block !important;
+	position: relative;
+	margin-top: -10px;
+}
+
+.ofm {
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	z-index: 100000000;
+}
+
+.ofm li {
+	float: left;
+	width: 50%;
+	list-style: none;
+	font-family: Cousine;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #565656;
+	padding: 13px 0;
+}
+
+.ofm li i {
+	font-size: 17px;
+}
+
+#cssmenu {
+	max-width: 300px;
+	width: 100%;
+	margin: 50px auto;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	background: #f5f5f5;
+	border: 1px solid #dddddd;
+	border-bottom: none;
+}
+
+.mobi-menu {
+	display: block;
+	position: absolute;
+	z-index: 99999999999;
+	top: 0px;
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+	left: 0px;
+	right: 0;
+	z-index: 888;
+}
+
+.left_header_top > ul > li > a{
+  padding: 7px;
+}
+
+.right_header_top > ul > li:first-child .search-form .form-group{
+  width: 65%;
+}
+
+.img-nav .row:nth-child(1) {
+	display: block !important;
+}
+
+.in1 img {
+	width: 100%;
+	max-width: auto;
+}
+
+.in2 .col-md-6:nth-child(1) {
+	margin-bottom: 20px;
+}
+
+
+#cssmenu > ul > li > a {
+	padding: 15px 20px;
+}
+
+.holder:after {
+	position: absolute;
+	content: "";
+	right: 20px;
+}
+
+#cssmenu > ul > li.active > a > span::after,
+#cssmenu > ul > li.open > a > span::after {
+	position: absolute;
+	content: "";
+	right: 20px;
+}
+
+#cssmenu > ul ul > li.active > a > span::after,
+#cssmenu > ul ul > li.open > a > span::after {
+	position: absolute;
+	content: "";
+	right: 20px;
+}
+
+#cssmenu ul ul li a {
+	padding: 15px 20px;
+}
+
+#cssmenu ul ul ul li a {
+	padding-left: 20px;
+}
+
+#cssmenu ul ul ul li a {
+	padding: 10px 20px;
+}
+
+.img-nav .container {
+	width: 100%;
+	padding: 0 20px;
+}
+
+.mobi-menu {
+	display: block;
+}
+
+.m_nav {
+	cursor: pointer;
+}
+
+#cssmenu ul ul li a {
+	padding: 15px 20px !important;
+}
+.right_header_top {
+  float: none;
+}
+.right_header_top > ul > li {
+  display: inline-block;
+  float: none;
+}
+.left_header_top > ul > li {
+  float: none;
+  display: inline-block;
+}
+.right_header_top {
+  text-align: center;
+}
+.left_header_top {
+  text-align: center;
+}
+.ofm li {
+  width: 100%;
+  text-align: center;
+}
+
+/*contact page*/
+.contact_info {
+  margin-bottom: 40px;
+}
+.contact_mail .send_mail input, .contact_mail .send_mail input{
+  width: 100%;
+}
+.footer_top{
+  padding-bottom: 40px;
+}
+.footer_bottom {
+  padding: 50px 0 10px;
+}
+.footer_top_widget {
+  margin-top: 40px;
+}
+.footer_top_widget input {
+  width: 60%;
+}
+.footer_widget {
+  margin-bottom: 40px;
+}
+.copyright > p {
+  font-size: 12px;
+}
+.copyright {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.footer_menu > ul > li > a {
+  font-size: 11px;
+  padding: 0 2px;
+}
+
+/*about us page*/
+.welcome_img {
+  margin-bottom: 15px;
+}
+.another_accordion {
+  margin-bottom: 85px;
+}
+
+/*bloglist page*/
+.blog_sidebar {
+  margin-top: 50px;
+}
+.single_post .post_title, .single_bloglist_post .post_title{
+  line-height: 28px;
+}
+.commentator_img{
+  padding-bottom: 15px;
+}
+
+/*checkout page*/
+.checkout{
+	margin-bottom: 35px;
+}
+.checkout_form .card-title i {
+  margin-right: 10px;
+}
+.pass_forget {
+  float: left;
+  margin: 10px auto;
+}
+.various_address{
+  margin-top: 15px;
+}
+.various_address input {
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  width: 100%;
+}
+.various_address input:nth-child(even) {
+  margin-right: 0px;
+}
+/*grid page*/
+.category_products{
+	margin-top: 0;
+}
+.sorting {
+  display: flex;
+  justify-content: center;
+}
+.sorting_view {
+  float: unset;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+body#gird_page .category_products .single_tab_content figure.effect-lexi figcaption::before {
+  bottom: 17%;
+  left: 29%
+}
+
+/* start special add to cart*/
+body#gird_page .category_products .single_tab_content figure.effect-lexi .add_to_cart {
+  bottom: 17%;
+}
+
+
+
+
+/* end special add to cart*/
+.category_products .single_tab_content {
+  margin-bottom: 0;
+}
+
+/*list page*/
+.single_list_image .single_tab_content {
+  margin-bottom: 30px;
+}
+.single_list_details .product_description .social_icons > li{
+	margin-right: 5px;
+}
+.single_list_details .product_description .social_icons > li > a {
+	font-size: 15px;
+	font-weight: 400;
+	padding: 3px 8px;
+}
+.single_list_details .product_description .social_icons > li > a > i{
+	font-size: 15px;
+	line-height: 20px;
+}
+.single_list_product {
+  padding: 50px 0;
+}
+
+/*our blog page*/
+.tag_share {
+  text-align: center;
+}
+.social_share {
+  margin-top: 10px;
+  float: none;
+}
+.social_share > li {
+  margin-right: 30px;
+}
+body#our_blog .comment_form > input {
+  margin-bottom: 30px;
+  margin-left: 0;
+  width: 100%;
+}
+.comment_form > input[type="website"]{
+	margin-bottom: 0px;
+}
+.social_icons a {
+  padding: 3px 9px;
+}
+.social_icons i {
+  font-size: 15px;
+  height: 13px;
+  width: 13px;
+}
+
+/*first home pages*/
+.products, .our_supports, .footer_slider {
+  margin: 0 auto;
+  width: 90%;
+}
+.first_product_row, .second_product_row, .third_product_row{
+	margin-bottom: 0;
+}
+.products .single_product {
+  margin-bottom: 40px;
+}
+.grid figure {
+  margin: 0 auto;
+}
+.grid > figure > img, .products .single_product .grid {
+  width: 100%;
+  height: auto;
+}
+.first_product_row .single_product .grid {
+  background: none repeat scroll 0 0;
+}
+.third_product_row .effect-winston img, .third_product_row .effect-moses img{
+	height: 300px;
+}
+.first_product_row .single_product .grid .effect-julia > figcaption > h1, .first_product_row .single_product .grid .effect-julia > figcaption > h1 > span{
+	font-size: 20px;
+	left: 56%;
+	top: 0%;
+}
+.first_product_row figure.effect-julia:hover p {
+  -webkit-transform: translate3d(76%, -50%, 0px);
+  -ms-transform: translate3d(76%, -50%, 0px);
+  -o-transform: translate3d(76%, -50%, 0px);
+  transform: translate3d(76%, -50%, 0px);
+  font-size: 13px;
+}
+.first_product_row .single_product .grid .effect-lexi > figcaption > h2 {
+  font-size: 20px;
+  left: -3px;
+  top: 55%;
+}
+.first_product_row .single_product .grid .effect-lexi a {
+  font-size: 15px;
+  top: 48%;
+}
+.first_product_row .single_product .grid figure.effect-lexi figcaption::before {
+	height: 150px;
+	left: 63%;
+	top: -25%;
+	width: 150px;
+}
+.first_product_row .single_product .grid .effect-lexi > figcaption > p {
+  font-size: 12px;
+  right: -4%;
+  top: 12%;
+}
+.second_product_row .effect-honey > figcaption > h2 {
+  bottom: 4%;
+  font-size: 20px;
+  left: 25%;
+  line-height: 18px;
+  padding: 10px;
+  width: auto;
+  margin-top: 5px;
+}
+.second_product_row .effect-honey i {
+  bottom: -17px;
+  font-size: 12px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.second_product_row .effect-steve > figcaption {
+  width: 100%;
+  -webkit-transform: translate3d(0%, 0%, 0px);
+  -ms-transform: translate3d(0%, 0%, 0px);
+  -o-transform: translate3d(0%, 0%, 0px);
+  transform: translate3d(0%, 0%, 0px);
+  padding: 10px;
+}
+.second_product_row .effect-steve > figcaption > h2 {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px;
+  right: -28%;
+  top: 23%;
+  width: 37%;
+}
+.second_product_row .effect-steve > figcaption > p {
+  bottom: 7%;
+  font-size: 9px;
+  margin: 0;
+  right: 40%;
+  -webkit-transform: translate3d(81%, 0%, 0px);
+  -ms-transform: translate3d(81%, 0%, 0px);
+  -o-transform: translate3d(81%, 0%, 0px);
+  transform: translate3d(81%, 0%, 0px);
+  width: 45%;
+  padding: 10px;
+}
+
+.third_product_row figure.effect-winston:hover figcaption::before {
+  top: -77%;
+  -webkit-transform: rotate3d(0, 0, 1, 36deg);
+  -ms-transform: rotate3d(0, 0, 1, 36deg);
+  -o-transform: rotate3d(0, 0, 1, 36deg);
+  transform: rotate3d(0, 0, 1, 36deg);
+  -webkit-transform-origin: 15% 67% 0;
+  -moz-transform-origin: 15% 67% 0;
+  -ms-transform-origin: 15% 67% 0;
+  -o-transform-origin: 15% 67% 0;
+  transform-origin: 15% 67% 0;
+  left: 40%
+}
+.third_product_row .effect-winston figcaption p {
+  top: 3%;
+}
+.third_product_row .effect-winston h2{
+  -webkit-transform: translate3d(100%, 799%, 0px);
+  -ms-transform: translate3d(100%, 799%, 0px);
+  -o-transform: translate3d(100%, 799%, 0px);
+  transform: translate3d(100%, 799%, 0px);
+}
+.third_product_row .effect-winston h2, .third_product_row .effect-winston h2 > span{
+	font-size: 20px;
+}
+.third_product_row figure.effect-winston:hover h2 {
+  -webkit-transform: translate3d(0%, 90%, 0px);
+  -ms-transform: translate3d(0%, 90%, 0px);
+  -o-transform: translate3d(0%, 90%, 0px);
+  transform: translate3d(0%, 90%, 0px);
+}
+.third_product_row figure.effect-winston:hover h2 > span{
+	-webkit-transform: translate3d(0%, 00%, 0px);
+  -ms-transform: translate3d(0%, 00%, 0px);
+  -o-transform: translate3d(0%, 00%, 0px);
+  transform: translate3d(0%, 00%, 0px);
+}
+.products .third_product_row .single_product .grid, .half_row .effect-julia > img {
+  height: 178px;
+}
+.half_row{
+	margin-bottom: 0;
+}
+.half_row .effect-julia > figcaption > h2 {
+	font-size: 20px;
+	left: 47px;
+	position: absolute;
+	top: 10px;
+}
+.third_product_row figure.effect-julia:hover p {
+  -webkit-transform: translate3d(-8px, 29px, 0px);
+  -ms-transform: translate3d(-8px, 29px, 0px);
+  -o-transform: translate3d(-8px, 29px, 0px);
+  transform: translate3d(-8px, 29px, 0px);
+  width: 116%;
+  font-size: 15px;
+}
+.half_row.half_last_row h3 {
+  font-size: 20px;
+}
+.third_product_row .effect-moses:hover h2, .third_product_row .effect-moses h2 {
+	font-size: 11px;
+	left: 5%;
+	top: 26%;
+	width: 55%;
+	height: 18%;
+}
+.third_product_row .effect-moses:hover p, .third_product_row .effect-moses p {
+	font-size: 11px;
+	height: 18%;
+	padding: 16px;
+	right: 5%;
+	top: 40%;
+	width: 56%;
+}
+
+
+/*second home page*/
+
+.new_featured_sales .nav-tabs, .new_featured_sales .nav-pills, .product_item_details .nav-tabs, .product_item_details .nav-pills{
+	width: 94%;
+}
+.new_featured_sales .nav-tabs > li, .new_featured_sales .nav-pills > li, .product_item_details .nav-tabs > li, .product_item_details .nav-pills > li{
+	margin: 0 1px;
+}
+.new_featured_sales .nav-tabs > li > a, .new_featured_sales .nav-pills > li > a, .product_item_details .nav-tabs > li > a, .product_item_details .nav-pills > li > a, .latest_post .section_title > h4{
+	font-size: 12px;
+	padding: 8px 10px;
+}
+.our_supports .row > .single_supports, .latest_post .single_latest_post, body#index_two .new_featured_sales .single_tab_content, body#index_three .new_featured_sales .single_tab_content {
+  margin-bottom: 40px;
+}
+.our_supports .row > .single_supports:nth-child(3), .latest_post .col-sm-4 > .single_latest_post:nth-child(3) {
+  margin-bottom: 0px;
+}
+body#index_two .footer_slider, body#index_three .footer_slider {
+  padding-top: 0px;
+}
+body#index_two .latest_post, body#index_three .latest_post {
+  margin-top: 0px;
+}
+body#index_two .new_featured_sales, body#index_three .new_featured_sales {
+  margin: 0;
+}
+body#about_us .skill_progress_bar .skill_percent.magento, body#about_us .skill_progress_bar .skill_percent.html {
+  left: 86%;
+}
+body#about_us .crazy_team_area .container{
+  max-width: 250px;
+  width: 250px;
+}
+
+/*single product page*/
+.single_product_description > h6{
+  font-size: 21px;
+}
+.top_border_with_pad, .quanlity_cart_fav.border_with_pad{
+  display: block;
+}
+.top_border_with_pad .product_color {
+  display: flex;
+}
+
+body#single-product .color_size .product_size {
+  float: none;
+  margin-top: 20px;
+  display: flex;
+}
+.top_border_with_pad [class*="col-"]:last-child{
+  padding-left: 0;
+}
+body#single-product .quanlity_cart_fav .quantity {
+  margin-bottom: 20px;
+  display: flex;
+}
+body#single-product .social_icons a.add_cart_btn {
+  padding: 4.7px;
+}
+body#single-product .product_social .social_icons a{
+  padding: 2px 7px;
+}
+body#single-product .single_tab_content .effect-lexi figcaption::before {
+  left: -20%;
+}
+body#single-product .upsell_products .single_tab_content .add_to_cart {
+  font-size: 10px;
+  left: -12%;
+}
+
+
+
+/* start cart & search box*/
+
+.right_header_top > ul > li > ul {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 5px #d3d3d3;
+  display: none;
+  left: 16px;
+  max-width: 90%;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 200;
+}
+
+.right_header_top > ul > li > a {
+  color: #888888;
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+ /*end cart & search box*/
+
+/* --Compare-- */
+.compare-area .table-responsive {
+  width: 100%;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  border: 1px solid #ddd;
+}
+
+
+
+}
+
+
+
+
+/* Wide Mobile Layout: 480px. */
+/*================================================== */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	.column {width:450px;}
+
+}
