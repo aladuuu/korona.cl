@@ -1264,7 +1264,7 @@ nav ul > li a:hover {
     color: #555555;
 }
 nav ul > li.dropdown_mmenu > a, nav ul li.dropdown_menu > a {
-  background: rgba(0, 0, 0, 0) url("https://demo.hasthemes.com/cruise-preview/cruise/img/dropdown-bg.png") no-repeat scroll 100% 64%;
+  background: rgba(0, 0, 0, 0) url("img/dropdown-bg.png") no-repeat scroll 100% 64%;
 }
 
 .megamenu {
@@ -1314,7 +1314,7 @@ nav ul > li.dropdown_mmenu > a, nav ul li.dropdown_menu > a {
   width: 400%;
 }
 .megamenu1 span a {
-  background: rgba(0, 0, 0, 0) url("https://demo.hasthemes.com/cruise-preview/cruise/img/list_style.png") no-repeat scroll 0 50%;
+  background: rgba(0, 0, 0, 0) url("img/list_style.png") no-repeat scroll 0 50%;
   color: #666666;
   display: table;
   font-size: 13px;
@@ -1385,16 +1385,16 @@ nav ul > li.dropdown_mmenu > a, nav ul li.dropdown_menu > a {
     text-transform: none;
     width: 100%;
     display: table;
-    background: rgba(0, 0, 0, 0) url("https://demo.hasthemes.com/cruise-preview/cruise/img/list_style.png") no-repeat scroll 5% 50%;
+    background: rgba(0, 0, 0, 0) url("img/list_style.png") no-repeat scroll 5% 50%;
 }
 
 .megamenu1 span a:hover {
-  background: #eeeeee url("https://demo.hasthemes.com/cruise-preview/cruise/img/list_style-hover-bg.png") no-repeat scroll 5% 50%;
+  background: #eeeeee url("img/list_style-hover-bg.png") no-repeat scroll 5% 50%;
   color: #555555;
   padding-left: 23px;
 }
 .d_menu span a:hover{
-  background: #eeeeee url("https://demo.hasthemes.com/cruise-preview/cruise/img/list_style-hover-bg.png") no-repeat scroll 8% 50%;
+  background: #eeeeee url("img/list_style-hover-bg.png") no-repeat scroll 8% 50%;
   color: #555555;
   padding-left: 37px;
 }
@@ -1498,7 +1498,7 @@ nav ul > li.dropdown_mmenu > a, nav ul li.dropdown_menu > a {
     display: block;
     position: absolute;
     content: "";
-    background: url('https://demo.hasthemes.com/cruise-preview/cruise/img/mega-menu-img/plus.png') no-repeat scroll 0% 0% transparent;
+    background: url('img/mega-menu-img/plus.png') no-repeat scroll 0% 0% transparent;
     width: 22px;
     height: 22px;
     right: 40px;
@@ -1518,7 +1518,7 @@ nav ul > li.dropdown_mmenu > a, nav ul li.dropdown_menu > a {
     display: block;
     position: absolute;
     content: "";
-    background: url('https://demo.hasthemes.com/cruise-preview/cruise/img/mega-menu-img/minus.png') no-repeat center;
+    background: url('img/mega-menu-img/minus.png') no-repeat center;
     width: 22px;
     height: 22px;
     right: 40px;
@@ -1534,7 +1534,7 @@ nav ul > li.dropdown_mmenu > a, nav ul li.dropdown_menu > a {
     display: block;
     position: absolute;
     content: "";
-    background: url('https://demo.hasthemes.com/cruise-preview/cruise/img/mega-menu-img/minus.png') no-repeat center;
+    background: url('img/mega-menu-img/minus.png') no-repeat center;
     width: 22px;
     height: 22px;
     right: 40px;
@@ -1961,7 +1961,7 @@ figure.effect-lexi img{
   display: none;
 }
 .third_product_row figure.effect-winston:hover figcaption::before {
-  background: url("https://demo.hasthemes.com/cruise-preview/cruise/img/triangle.svg") no-repeat scroll center center / 100% 100% rgba(0, 0, 0, 0);
+  background: url("img/triangle.svg") no-repeat scroll center center / 100% 100% rgba(0, 0, 0, 0);
   content: "";
   height: 100%;
   left: 0;
@@ -2724,7 +2724,7 @@ body#index_two .single_latest_post .effect-honey > a, body#index_three .single_l
 
 
 .breadcrumb_main_area {
-  background: url("https://demo.hasthemes.com/cruise-preview/cruise/img/Contact_breadcumb.png") no-repeat center center / cover  #000000;
+  background: url("img/telas.png") no-repeat center center / cover  #000000;
   overflow: hidden;
   text-align: center;
   position: relative;
@@ -2970,7 +2970,7 @@ a:hover, a:active, a:visited, a:focus  {text-decoration:none}
 }
 .skill_progress_bar .progress {
   position: relative;
-  background: url(https://demo.hasthemes.com/cruise-preview/cruise/img/progress-bg-part.png);
+  background: url(img/progress-bg-part.png);
   overflow: visible;
   margin-bottom: 82px;
 }
@@ -3099,7 +3099,7 @@ a:hover, a:active, a:visited, a:focus  {text-decoration:none}
   padding-bottom: 9px;
 }
 .sidebar_widget > ul > li {
-  background: url("https://demo.hasthemes.com/cruise-preview/cruise/img/list_style.png") no-repeat scroll 0 27px rgba(0, 0, 0, 0);
+  background: url("img/list_style.png") no-repeat scroll 0 27px rgba(0, 0, 0, 0);
   border-bottom: 1px dashed #dddddd;
   padding: 15px 0 15px 15px;
 }
@@ -3410,12 +3410,12 @@ a.tag:hover, .social_icons > li > a:hover{
   margin-bottom: 11px;
 }
 .category_sidebar .panel-default > .panel-heading{
-  background: rgba(0, 0, 0, 0) url("https://demo.hasthemes.com/cruise-preview/cruise/img/list_style.png") no-repeat scroll 0 17px;
+  background: rgba(0, 0, 0, 0) url("img/list_style.png") no-repeat scroll 0 17px;
   padding-bottom: 10px;
   padding-top: 7px;
 }
 .category_sidebar .panel-body li, .sub_widget.badge_widget li{
-  background: rgba(0, 0, 0, 0) url("https://demo.hasthemes.com/cruise-preview/cruise/img/list_style.png") no-repeat scroll 0 15px;
+  background: rgba(0, 0, 0, 0) url("img/list_style.png") no-repeat scroll 0 15px;
   padding-bottom: 8px;
   padding-top: 7px;
   padding-left: 15px;
@@ -3423,7 +3423,7 @@ a.tag:hover, .social_icons > li > a:hover{
  .sub_widget.badge_widget li{
   padding-top: 15px;
   padding-bottom: 10px;
-  background: rgba(0, 0, 0, 0) url("https://demo.hasthemes.com/cruise-preview/cruise/img/list_style.png") no-repeat scroll 0 23px;
+  background: rgba(0, 0, 0, 0) url("img/list_style.png") no-repeat scroll 0 23px;
  }
 .category_sidebar .panel-group .panel, .category_sidebar .panel-heading, .panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group{
   border-radius: 0px;
@@ -3686,7 +3686,7 @@ a.tag:hover, .social_icons > li > a:hover{
 }
 
 .elastislide-wrapper.elastislide-loading {
-  background-image: url(https://demo.hasthemes.com/cruise-preview/cruise/img/loading.gif);
+  background-image: url(img/loading.gif);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -3769,7 +3769,7 @@ a.tag:hover, .social_icons > li > a:hover{
 
 .elastislide-horizontal nav span {
   position:absolute;
-  background-image:url(https://demo.hasthemes.com/cruise-preview/cruise/img/nav-h1.gif);
+  background-image:url(img/nav-h1.gif);
   width:19px;
   height:33px;
   text-indent: -9000px;
