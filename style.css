@@ -152,8 +152,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
+.noClick {
+   pointer-events: none;
+}
 
 /* ==========================================================================
    Helper classes
@@ -2723,13 +2724,26 @@ body#index_two .single_latest_post .effect-honey > a, body#index_three .single_l
 --------------------------------------*/
 
 
-.breadcrumb_main_area {
-  background: url("img/telas.png") no-repeat center center / cover  #000000;
+.breadcrumb_productos {
+  background: url("img/productos.jpeg") no-repeat center center / cover  #000000;
   overflow: hidden;
   text-align: center;
   position: relative;
 }
-.breadcrumb_main_area > .overlay {
+.breadcrumb_productos > .overlay {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.breadcrumb_stock {
+  background: url("img/stock.jpeg") no-repeat center center / cover  #000000;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+.breadcrumb_stock > .overlay {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
   height: 100%;
   position: absolute;
@@ -2743,6 +2757,19 @@ body#index_two .single_latest_post .effect-honey > a, body#index_three .single_l
   position: relative;
 }
 .breadcrumb_404 > .overlay {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.breadcrumb_info {
+  background: url("img/info.jpeg") no-repeat center center / cover  #000000;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+.breadcrumb_info > .overlay {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
   height: 100%;
   position: absolute;
