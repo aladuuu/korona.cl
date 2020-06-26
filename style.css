@@ -4576,3 +4576,9 @@ background:#f1c40f;
   color: #fff;
   cursor: pointer;
 }
+.hidden_text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+

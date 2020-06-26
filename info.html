@@ -16,6 +16,7 @@
         <link href='https://fonts.googleapis.com/css?family=BioRhyme' rel='stylesheet' type='text/css'>
         <!-- fontawesome -->
 		<script src="https://kit.fontawesome.com/110d3aff68.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/normalize.css">
         <!-- bootstrap -->
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
         <!-- uikit -->
@@ -104,127 +105,112 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="breadcrumb_main">
-                            <h2 style="font-family: 'BioRhyme', cursive; font-size: 40px; font-weight: 700; color: white; letter-spacing: 2px;">Información</h2>
+                            <h2 style="font-family: 'BioRhyme', cursive; font-size: 30px; font-weight: 700; color: white;">Información</h2>
                         </div>
                     </div>
                 </div>
             </div>            
         </section>
         <!-- End breadcrumb -->
-        <!-- GTranslate-->
-        <div style="margin-right: 50px; margin-top: -40px;" align="right">
-        <a href="#" onclick="doGTranslate('en|en');return false;" title="English" class="gflag nturl" style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="English" /></a> <a href="#" onclick="doGTranslate('en|pt');return false;" title="Portuguese" class="gflag nturl" style="background-position:-300px -200px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Portuguese" /></a> <a href="#" onclick="doGTranslate('en|es');return false;" title="Spanish" class="gflag nturl" style="background-position:-600px -200px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Spanish" /></a>
-        <style type="text/css">
-        <!--
-        a.gflag {vertical-align:middle;font-size:24px;padding:1px 0;background-repeat:no-repeat;background-image:url(//gtranslate.net/flags/24.png);}
-        a.gflag img {border:0;}
-        a.gflag:hover {background-image:url(//gtranslate.net/flags/24a.png);}
-        #goog-gt-tt {display:none !important;}
-        .goog-te-banner-frame {display:none !important;}
-        .goog-te-menu-value:hover {text-decoration:none !important;}
-        body {top:0 !important;}
-        #google_translate_element2 {display:none!important;}
-        -->
-        </style>
-        <div id="google_translate_element2"></div>
-        <script type="text/javascript">
-        function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'es',autoDisplay: false}, 'google_translate_element2');}
-        </script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
-        <script type="text/javascript">
-        /* <![CDATA[ */
-        eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
-        /* ]]> */
-        </script>
-        </div>
-        <!-- GTranslate-->
-        <div id="comprar"></div><br>
-        <section class="contact_google_map_area margin-bottom-50">
+        <section class="checkout_area">
             <div class="container">
-                <div class="row"><a></a>
+                <div class="row">
                     <div class="col-lg-12">
-                        <div class="contact_google_map">
-                            <h4>Como Comprar</h4><br>
-                            <p>
-                                &#9312; Elegir diseños dentro de <a href="stock.html">nuestro stock disponible</a>.<br><br>
-                                &#9313; Mandar foto de lo que quieres via DM <a href="https://www.instagram.com/cokemerino" target="_blank">por Instagram</a> y esperar confirmación.<br><br>
-                                &#9314; <a href="#pagos">Transferir</a> y mandar pantallazo de comprobante via DM <a href="https://www.instagram.com/cokemerino" target="_blank">por Instagram</a>.<br><br>
-                                &#9315; <a href="#envios">Elegir metodo de entrega</a> y comunicar via DM <a href="https://www.instagram.com/cokemerino" target="_blank">por Instagram</a>.<br><br>
-                                &#9316; Las mascarillas o cuellos se empiezan a fabricar una vez realizada la transferencia.
-                            </p>
+                        <div class="checkout fix">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="checkout_form">
+                                        <div class="panel-group" id="accordion">
+                                          <div id="comprar" class="card">
+                                            <div class="card-header">
+                                              <h4 class="card-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                  <span class="btn">1</span> Como comprar
+                                                  <span class="floatright"><i class="fa fa-plus"></i></span>
+                                                </a>
+                                              </h4>
+                                            </div>
+                                            <div id="collapseOne" class="collapse" data-parent="#accordion" aria-labelledby="headingOne">
+                                            <br>&#9312; Elegir diseños dentro de <a href="stock.html">nuestro stock disponible</a>.<br><br>
+                                            &#9313; Mandar foto de lo que quieres via DM <a href="https://www.instagram.com/cokemerino" target="_blank">por Instagram</a>.<br><br>
+                                            &#9314; <a href="#pagos">Transferir</a> y mandar pantallazo de comprobante via DM <a href="https://www.instagram.com/cokemerino" target="_blank">por Instagram</a>.<br><br>
+                                            &#9315; <a href="#envios">Elegir metodo de entrega</a> y comunicar via DM <a href="https://www.instagram.com/cokemerino" target="_blank">por Instagram</a>.<br><br>
+                                            &#9316; Las mascarillas o cuellos se empiezan a fabricar una vez realizada la transferencia.<br><br>
+                                            </div>
+                                          </div>
+                                          <div id="envios" class="card">
+                                            <div class="card-header">
+                                              <h4 class="card-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                  <span class="btn">2</span> Envios
+                                                  <span class="floatright"><i class="fa fa-plus"></i></span>
+                                                </a>
+                                              </h4>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" data-parent="#accordion" aria-labelledby="headingTwo">
+                                        <br>Despachamos a todo Chile por Starken o Chilexpress.<br><br>
+                                        Las entregas en Santiago se pueden hacer a domicilio o coordinar dentro de la comuna de Las Condes.<br><br>
+                                        Realizamos envios los Martes, Jueves y Sabado.<br><br>
+                                        <i class="fa fa-exclamation-triangle"></i> TODO ENVIO ES POR PAGAR.<br><br>
+                                        Los valores los puedes cotizar aqui:<br><br>
+                                        <a href="http://www.starken.cl/personas/cotiza-tu-envio?ciudadOrigen=&ciudadDestino=&op=Cotizar&form_build_id=form-2ARtoSQYa0j2fk23_qNmE6mtu_z4oLJwxDQm06FX3xo&form_id=kiteknology_tarifa_s_formulario" target="_blank"><span style="color: green; background-color: lightgrey; border-style: solid; border-color: lightgrey; border-width: 1px; border-left-width: 10px; border-right-width: 10px">Starken <i class="fa fa-truck"></i></span></a><br><br>
+                                        <a href="https://www.chilexpress.cl/cotizador-envios-de-encomiendas-tarifas" target="_blank"><span style="color: yellow; background-color: darkgrey; border-style: solid; border-color: darkgrey; border-width: 1px; border-left-width: 10px; border-right-width: 10px">Chilexpress <i class="fa fa-truck"></i></span></a><br><br>
+                                            </div>
+                                          </div>
+                                          <div id="devoluciones" class="card">
+                                            <div class="card-header">
+                                              <h4 class="card-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                  <span class="btn">3</span> Devoluciones
+                                                  <span class="floatright"><i class="fa fa-plus"></i></span>
+                                                </a>
+                                              </h4>
+                                            </div>
+                                            <div id="collapseThree" class="collapse" data-parent="#accordion" aria-labelledby="headingThree">
+                                        <br><span style="color: red"><i class="fa fa-exclamation-circle"></i></span> Lamentablemente nuestras mascarillas y cuellos<span style="color: red"> no cuentan con devolución</span>.<br><br>
+                                        ¡Por lo que elige bien tu diseño!<br><br>
+                                        <img alt="" src="img/devoluciones.png"><br><br>
+                                          </div>
+                                          </div>
+                                          <div id="pagos" class="card">
+                                            <div class="card-header">
+                                              <h4 class="card-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                  <span class="btn">4</span> Formas de pago
+                                                  <span class="floatright"><i class="fa fa-plus"></i></span>
+                                                </a>
+                                              </h4>
+                                            </div>
+                                            <div id="collapseFour" class="collapse" data-parent="#accordion" aria-labelledby="headingFour">
+                                            <br>Puedes realizar tus pagos via transferencia bancaria usando los siguentes datos:<br><br>
+                                            <img alt="" src="img/datos_transferencia.png"><br><br>
+                                            ¡Recuerda <a href="#comprar" target="_blank">confirmar el stock</a> y enviarnos un pantallazo de tu transferencia <a href="https://www.instagram.com/cokemerino" target="_blank">por Instagram</a> para validad tu compra!<br><br>
+                                            </div>
+                                          </div>
+                                          <div id="contacto" class="card">
+                                            <div class="card-header">
+                                              <h4 class="card-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                                  <span class="btn">5</span> Contacto
+                                                  <span class="floatright"><i class="fa fa-plus"></i></span>
+                                                </a>
+                                              </h4>
+                                            </div>
+                                            <div id="collapseFive" class="collapse" data-parent="#accordion" aria-labelledby="headingFive">
+                                            <br>Nos puedes contactar mediante DM por instagram en la cuenta <a href="https://instagram.com/cokemerino" target="_blank">@cokemerino</a>.<br><br>
+                                            O, nos puedes enviar un mail a la siguente dirección:<br><br>
+                                            <img alt="" src="img/email.png"><br><br>
+                                            <u>Te responderemos a la brevedad posible.</u>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <hr id="envios">
-        <section class="contact_google_map_area margin-bottom-50">
-            <div class="container">
-                <div class="row"><a></a>
-                    <div class="col-lg-12">
-                        <div class="contact_google_map">
-                            <h4>Envios</h4><br>
-                            <p>
-                                Despachamos a todo Chile por Starken o Chilexpress.<br><br>
-                                Las entregas en Santiago se pueden hacer a domicilio o coordinar dentro de la comuna de Las Condes.<br><br>
-                                Realizamos envios los Martes, Jueves y Sabado.<br><br>
-                                <i class="fa fa-exclamation-triangle"></i> TODO ENVIO ES POR PAGAR.<br><br>
-                                Los valores los puedes cotizar aqui:<br><br>
-                                <a href="http://www.starken.cl/personas/cotiza-tu-envio?ciudadOrigen=&ciudadDestino=&op=Cotizar&form_build_id=form-2ARtoSQYa0j2fk23_qNmE6mtu_z4oLJwxDQm06FX3xo&form_id=kiteknology_tarifa_s_formulario" target="_blank"><span style="color: green; background-color: lightgrey; border-style: solid; border-color: lightgrey; border-width: 1px; border-left-width: 10px; border-right-width: 10px">Starken <i class="fa fa-truck"></i></span></a><br><br>
-                                <a href="https://www.chilexpress.cl/cotizador-envios-de-encomiendas-tarifas" target="_blank"><span style="color: yellow; background-color: darkgrey; border-style: solid; border-color: darkgrey; border-width: 1px; border-left-width: 10px; border-right-width: 10px">Chilexpress <i class="fa fa-truck"></i></span></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr id="devoluciones">
-        <section class="contact_google_map_area margin-bottom-50">
-            <div class="container">
-                <div class="row"><a></a>
-                    <div class="col-lg-12">
-                        <div class="contact_google_map">
-                            <h4>Devoluciones</h4><br>
-                            <p>
-                                <span style="color: red"><i class="fa fa-exclamation-circle"></i></span> Lamentablemente nuestras mascarillas y cuellos<span style="color: red"> no cuentan con devolución</span>.<br><br>
-                                ¡Por lo que elige bien tu diseño!<br><br>
-                            <img alt="" src="img/devoluciones.png"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr id="pagos">
-        <section class="contact_google_map_area margin-bottom-50">
-            <div class="container">
-                <div class="row"><a></a>
-                    <div class="col-lg-12">
-                        <div class="contact_google_map">
-                            <h4>Formas de pago</h4><br>
-                            <p>Puedes realizar tus pagos via transferencia bancaria usando los siguentes datos:<br><br>
-                            <img alt="" src="img/datos_transferencia.png"><br><br>
-                            ¡Recuerda enviarnos un pantallazo de tu transferencia por Instagram para validad tu compra!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr id="contacto">
-        <section class="contact_google_map_area margin-bottom-50">
-            <div class="container">
-                <div class="row"><a></a>
-                    <div class="col-lg-12">
-                        <div class="contact_google_map">
-                            <h4>Contacto</h4><br>
-                            <p>Nos puedes contactar mediante DM por instagram en la cuenta <a href="https://instagram.com/cokemerino" target="_blank">@cokemerino</a>.<br><br>
-                            O, Nos puedes enviar un mail a la siguente dirección:<br><br>
-                            <img alt="" src="img/email.png"></p>
-                            <p><u>Respondemos dentro de 24hrs.</u></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr>
         <!-- start footer -->
         <footer>
             <!-- start footer bottom area -->
@@ -339,6 +325,8 @@
         <script src="js/scrollUp.min.js"></script>
         <!-- plugins from boilerplate -->
         <script src="js/plugins.js"></script>
+        <!-- collapse -->
+        <script src="js/jquery.collapse.js"></script>
         <!-- WOW Animation -->
         <script src="js/wow.min.js"></script> 
         <!--Activating WOW Animation only for modern browser-->
