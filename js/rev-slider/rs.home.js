@@ -6,7 +6,7 @@
 			// Revolution Slider Initialize
 			if($(".fullwidthbanner").get(0)) {
 				var rev = $(".fullwidthbanner").revolution({
-					delay:9000,
+					delay:3000,
 					startheight:570,
 					startwidth:1350,
 
