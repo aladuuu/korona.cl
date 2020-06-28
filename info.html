@@ -38,6 +38,8 @@
 		<link rel="stylesheet" href="style.css"/>
         <!-- responsive -->
 		<link rel="stylesheet" href="css/responsive.css"/>
+        <!-- whatsapp -->
+        <link rel="stylesheet" href="css/floating-wpp.css">
         <!-- modernizr from html5 boilerplate -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -224,6 +226,7 @@
         </section>
         <!-- start footer -->
         <footer>
+            <div id="koronawhatsapp"></div>
             <!-- start footer bottom area -->
             <div class="footer_bottom_area">
                 <div class="container">
@@ -349,5 +352,15 @@
                 $( "#cssmenu" ).slideToggle( "slow", function() {});
             });
         </script>
+        <!-- whatsapp -->
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/floating-wpp.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('#koronawhatsapp').floatingWhatsApp({
+                });
+            });
+        </script>
+        <!-- whatsapp -->
     </body>
 </html>
