@@ -1727,6 +1727,7 @@ div#slider_rev .w-btn:hover {
 }
 div#slider_rev .tp-bullets{
   bottom: 32px !important;
+  display: none;
 }
 div#slider_rev .tparrows {
   display: none;
