@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Korona Maskarillas 2025</title>
+
+    <!-- Google Fonts: estilo cuento Disney -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css + FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      /* -------- Paleta mágica -------- */
+      :root {
+        --primary: #ff9f43; /* naranja pastel */
+        --primary-light: #ffe9d6; /* naranja claro */
+        --secondary: #4d9de0; /* celeste hada */
+        --accent: #ff6b6b; /* coral */
+        --dark: #132144;
+        --light: #fffaf4;
+      }
+      /* -------- Base -------- */
+      * {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Fredoka", sans-serif;
+        background: var(--light);
+        color: var(--dark);
+        text-decoration: none;
+      }
+      h1,
+      h2,
+      h3,
+      .brand {
+        font-family: "Fredoka", sans-serif;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      section {
+        position: relative;
+        overflow: hidden;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      /* -------- Navbar -------- */
+      .navbar {
+        transition: all 0.3s;
+      }
+      .navbar-brand img {
+        height: 80px;
+      }
+      .nav-link {
+        font-weight: 600;
+      }
+      .nav-link.active,
+      .nav-link:hover {
+        color: var(--accent) !important;
+      }
+
+      /* Sombra al hacer scroll */
+      .navbar.scrolled {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* -------- Hero -------- */
+      #hero {
+        height: 100vh;
+        background: url("https://placehold.co/1600x900/FFE9D6/333?text=Tu+Hero+Mágico")
+          center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+      }
+      #hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+      }
+      #hero .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+      #hero h1 {
+        font-size: clamp(2.5rem, 7vw, 5rem);
+        line-height: 1.1;
+        text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+      }
+      #hero p {
+        font-size: 1.35rem;
+      }
+      .btn-disney {
+        background: url("madera.png") center/cover;
+        border: none;
+        padding: 0.9rem 2.2rem;
+        font-weight: 700;
+        box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 60px;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      }
+      .btn-disney:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 9px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      /* -------- Tarjetas categoría -------- */
+      .category-card {
+        border-radius: 1.5rem;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        transition: transform 0.4s ease, box-shadow 0.4s;
+      }
+      .category-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 22px rgba(0, 0, 0, 0.15);
+      }
+      .category-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s;
+      }
+      .category-card:hover img {
+        transform: scale(1.15);
+      }
+      .category-card .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      }
+
+      /* -------- Productos -------- */
+      .product-card {
+        border: none;
+        border-radius: 1.25rem;
+        overflow: hidden;
+        transition: transform 0.35s ease, box-shadow 0.35s;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+      }
+      .product-price {
+        color: var(--accent);
+        font-weight: 700;
+        font-size: 1.3rem;
+      }
+
+      /* -------- Accordion -------- */
+      .accordion-button:not(.collapsed) {
+        background: var(--secondary);
+        color: #fff;
+        font-weight: 700;
+      }
+
+      /* -------- Footer -------- */
+      footer {
+        background: #f0f4ff;
+        padding: 4rem 0 1rem;
+        font-size: 0.95rem;
+      }
+      footer .social a {
+        color: var(--dark);
+        margin-right: 0.75rem;
+        font-size: 1.4rem;
+      }
+      footer h6 {
+        font-weight: 700;
+        color: var(--dark);
+      }
+
+      /* -------- WhatsApp Float -------- */
+      #whatsapp-float {
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        background: #25d366;
+        color: #fff;
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.9rem;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        z-index: 999;
+        transition: transform 0.25s;
+      }
+      #whatsapp-float:hover {
+        transform: scale(1.08);
+      }
+
+      /* -------- Estrellitas decorativas -------- */
+      .star {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background: var(--accent);
+        clip-path: polygon(
+          50% 0,
+          61% 35%,
+          100% 35%,
+          69% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          31% 57%,
+          0 35%,
+          39% 35%
+        );
+        opacity: 0.15;
+        animation: float 12s infinite ease-in-out;
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-25px) rotate(180deg);
+        }
+        100% {
+          transform: translateY(0) rotate(360deg);
+        }
+      }
+      /* Distribución aleatoria de estrellitas */
+      #hero .star:nth-child(1) {
+        top: 12%;
+        left: 18%;
+        animation-delay: 0s;
+      }
+      #hero .star:nth-child(2) {
+        top: 30%;
+        left: 80%;
+        animation-delay: 2s;
+      }
+      #hero .star:nth-child(3) {
+        top: 65%;
+        left: 15%;
+        animation-delay: 4s;
+      }
+      #hero .star:nth-child(4) {
+        top: 78%;
+        left: 60%;
+        animation-delay: 6s;
+      }
+      /* Compensa el alto del navbar en todos los anchors */
+      html {
+        scroll-padding-top: 60px;
+      } /* 100 ≈ alto del nav + margen */
+      section[id] {
+        scroll-margin-top: 60px;
+      }
+      /* ---- Títulos con toque mágico ---- */
+      .section-title {
+        position: relative;
+        display: inline-block; /* para que el subrayado se ajuste al texto */
+        padding: 0 0.25rem; /* un pelín de aire a los lados */
+        font-weight: 700;
+        /* “texto duplicado” detrás, 1 px a la derecha y abajo */
+        text-shadow: 4px 2px 0 var(--primary-light);
+      }
+
+      /* subrayado degradado */
+      .section-title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.35em; /* distancia bajo el texto */
+        width: 100%;
+        height: 0.3em; /* grosor de la línea */
+        background: linear-gradient(90deg, var(--accent) 0%, transparent 85%);
+        border-radius: 999px; /* puntas redondeadas */
+        pointer-events: none;
+      }
+      .padding-extra {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+      /* ---- Contacto ---- */
+      .contact-card {
+        background: #fff;
+        border: 0;
+        border-radius: 1rem;
+        padding: 0.75rem 1rem;
+        transition: transform 0.25s, box-shadow 0.25s;
+        text-decoration: none;
+        color: var(--dark);
+      }
+      .contact-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+      }
+      .contact-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 1.4rem;
+        margin-right: 1rem;
+      }
+
+      form .form-control:focus {
+        box-shadow: 0 0 0 0.2rem rgba(255, 159, 67, 0.25);
+        border-color: var(--primary);
+      }
+      .needs-validation input:invalid,
+      .needs-validation textarea:invalid {
+        border-color: #dc3545;
+      }
+      /* ——— Marco redondo de madera ——— */
+      .taller {
+        position: relative; /* para posicionar el ::after */
+        border-radius: 50%; /* mantenemos la forma circular */
+        z-index: 1; /* que quede por encima del pseudo-fondo */
+      }
+
+      /* Aro exterior */
+      .taller::after {
+        content: "";
+        position: absolute;
+        top: -24px;
+        left: -24px; /* grosor del marco */
+        width: calc(100% + 48px);
+        height: calc(100% + 48px);
+        border-radius: 50%;
+        /* textura madera (puedes cambiar la URL por otra) */
+        background: url("madera.png") center/cover;
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.35),
+          /* sombreado interior para volumen */ 0 4px 10px rgba(0, 0, 0, 0.15); /* sombra exterior sutil */
+        z-index: -1; /* detrás de la imagen */
+        pointer-events: none; /* que no estorbe clics */
+      }
+      /* --- Botones con textura de madera --- */
+      .btn,
+      .btn-disney {
+        position: relative;
+        overflow: hidden; /* recorta la textura dentro del borde */
+        color: #fff !important; /* aseguramos contraste */
+        border: none;
+      }
+
+      .btn::before,
+      .btn-disney::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("madera.png") center/cover;
+        opacity: 0.9; /* baja si la quieres más sutil */
+        transition: opacity 0.25s;
+        z-index: -1; /* atrás del texto */
+      }
+
+      .btn:hover::before,
+      .btn-disney:hover::before {
+        opacity: 1; /* un pelín más intensa al hover */
+      }
+
+      /* refuerzo de sombra y relieve para todos */
+      .btn,
+      .btn-disney {
+        box-shadow: 0 6px 0 rgba(0, 0, 0, 0.25);
+      }
+      .btn:hover,
+      .btn-disney:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+      }
+      /* ---- Footer mágico ---- */
+      .site-footer {
+        background: url("madera.png");
+        font-size: 0.95rem;
+      }
+
+      .footer-wave {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80px;
+        pointer-events: none;
+      }
+
+      .footer-wave path {
+        fill: var(--light); /* usa tu crema, no blanco puro */
+      }
+
+      /* 2 ▸ Súbela 2 px para lapar cualquier borde antialias */
+      .footer-wave {
+        top: -2px; /* si aún ves línea, sube a -3 ó -4 */
+        height: 90px; /* un poquito más alta para cubrir al moverla */
+      }
+
+      .footer-logo {
+        max-width: 120px;
+        filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.25));
+      }
+
+      .footer-title {
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        letter-spacing: 0.5px;
+      }
+
+      .footer-icon {
+        font-size: 1.35rem;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.15);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background 0.25s, transform 0.25s;
+      }
+      .footer-icon:hover {
+        background: #fff;
+        color: var(--primary);
+        transform: translateY(-3px);
+      }
+
+      .footer-link {
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.9;
+      }
+      .footer-link:hover {
+        text-decoration: underline;
+        opacity: 1;
+      }
+
+      .footer-news .form-control {
+        border: none;
+        border-radius: 1rem;
+      }
+      .footer-news .form-control:focus {
+        box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.4);
+      }
+      .footer-divider {
+        border-color: rgba(255, 255, 255, 0.35);
+      }
+    </style>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="74">
+    <!-- NAVBAR -->
+    <nav
+      id="mainNav"
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#hero">
+          <img src="logo.png" alt="Korona Maskarillas" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#categorias">Categorías</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#info">Info</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="hero" class="text-white">
+      <!-- estrellitas decorativas -->
+      <span class="star"></span><span class="star"></span
+      ><span class="star"></span><span class="star"></span>
+
+      <div class="hero-content container animate__animated animate__fadeInUp">
+        <h1>
+          Maskarillas <br /><span class="fw-light">con un toque de magia</span>
+        </h1>
+        <p class="mb-4">
+          Protección triple capa, diseños dignos de un cuento. Hechas con amor
+          en Chile.
+        </p>
+        <a href="#productos" class="btn btn-disney">Ver catálogo✨</a>
+      </div>
+    </header>
+
+    <!-- CATEGORÍAS -->
+    <section id="categorias" class="py-5 bg-light">
+      <div class="container padding-extra">
+        <h2 class="section-title mb-5">Encuentra tu estilo</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="category-card" onclick="scrollToSection('productos')">
+              <img
+                src="https://placehold.co/600x600/FFDAC1/333?text=Maskarillas"
+                alt="Maskarillas"
+              />
+              <div class="overlay">Maskarillas</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="category-card" onclick="scrollToSection('productos')">
+              <img
+                src="https://placehold.co/600x600/E3F6FF/333?text=Cuellos"
+                alt="Maskecuellos"
+              />
+              <div class="overlay">Maske&nbsp;cuellos</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="category-card" onclick="scrollToSection('productos')">
+              <img
+                src="https://placehold.co/600x600/FFF5BA/333?text=Accesorios"
+                alt="Accesorios"
+              />
+              <div class="overlay">Accesorios</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="py-5">
+      <div class="container padding-extra">
+        <h2 class="section-title mb-5">Nuestros Productos</h2>
+        <div class="row g-4">
+          <!-- Product 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card product-card h-100">
+              <img
+                src="https://placehold.co/800x800/FFBD59/333?text=Triple+Capa"
+                class="card-img-top"
+                alt="Maskarilla triple capa"
+              />
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">Maskarilla Triple Capa</h3>
+                <p class="small flex-grow-1">
+                  Algodón premium + TNT con cobre antiviral. +40 lavados.
+                </p>
+                <p class="product-price mb-3">$5 000</p>
+                <a href="#contacto" class="btn btn-disney w-100 mt-auto"
+                  >Comprar <i class="fa-solid fa-cart-shopping ms-1"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+          <!-- Product 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card product-card h-100">
+              <img
+                src="https://placehold.co/800x800/4D9DE0/fff?text=Maskecuello"
+                class="card-img-top"
+                alt="Maskecuello"
+              />
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">Maskecuello</h3>
+                <p class="small flex-grow-1">
+                  Protege cuello y rostro. Tela suave, respirable y con filtro
+                  interno.
+                </p>
+                <p class="product-price mb-3">$8 000</p>
+                <a href="#contacto" class="btn btn-disney w-100 mt-auto"
+                  >Comprar <i class="fa-solid fa-cart-shopping ms-1"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+          <!-- Product 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card product-card h-100">
+              <img
+                src="https://placehold.co/800x800/FF6B6B/fff?text=Accesorios"
+                class="card-img-top"
+                alt="Accesorios"
+              />
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">Accesorios</h3>
+                <p class="small flex-grow-1">
+                  Ajuste para orejas &amp; soporte nasal de aluminio.
+                </p>
+                <p class="product-price mb-3">$1 000</p>
+                <a href="#contacto" class="btn btn-disney w-100 mt-auto"
+                  >Comprar <i class="fa-solid fa-cart-shopping ms-1"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO -->
+    <section id="info" class="py-5 bg-light">
+      <div class="container padding-extra">
+        <h2 class="section-title mb-5">Información Importante</h2>
+        <div class="accordion accordion-flush" id="infoAccordion">
+          <!-- item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+              >
+                Cómo comprar
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#infoAccordion"
+            >
+              <div class="accordion-body">
+                1️⃣ Elige tu diseño dentro de nuestro
+                <a href="#productos">stock disponible</a>.<br />
+                2️⃣ Envíanos pantallazo vía Instagram o WhatsApp para confirmar
+                stock.<br />
+                3️⃣ Transfiere y envía tu comprobante.<br />
+                4️⃣ Elige método de envío y ¡listo!
+              </div>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+              >
+                Envíos
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#infoAccordion"
+            >
+              <div class="accordion-body">
+                Enviamos a todo Chile vía Starken o Chilexpress. Despachos
+                martes, jueves y sábado. 🚚 Todos los envíos son por pagar.
+              </div>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+              >
+                Devoluciones
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#infoAccordion"
+            >
+              <div class="accordion-body">
+                Por higiene, nuestras maskarillas y cuellos no tienen
+                devolución. ¡Elige bien tu diseño! 😷
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-5">
+      <div class="container padding-extra">
+        <div class="row g-5 align-items-center">
+          <!-- Col izquierda: info + CTA -->
+          <div class="col-12 col-lg-5">
+            <h2 class="section-title mb-3">¡Contáctanos ahora!</h2>
+            <p class="lead mb-4">
+              ¿Dudas o pedidos especiales?<br />¡Hablemos ahora mismo! 🤩
+            </p>
+
+            <!-- Tarjetas de contacto -->
+            <div class="row g-3 mb-4">
+              <div class="col-12">
+                <a
+                  href="https://wa.me/56912345678"
+                  target="_blank"
+                  class="contact-card shadow-sm d-flex align-items-center"
+                >
+                  <i class="fab fa-whatsapp contact-icon bg-success"></i>
+                  <span class="flex-grow-1"
+                    >WhatsApp
+                    <small class="text-muted d-block"
+                      >+56 9 1234 5678</small
+                    ></span
+                  >
+                  <i class="fa-solid fa-chevron-right text-muted"></i>
+                </a>
+              </div>
+              <div class="col-12">
+                <a
+                  href="https://instagram.com/koronamaskarillas"
+                  target="_blank"
+                  class="contact-card shadow-sm d-flex align-items-center"
+                >
+                  <i class="fab fa-instagram contact-icon bg-danger"></i>
+                  <span class="flex-grow-1"
+                    >Instagram
+                    <small class="text-muted d-block"
+                      >@koronamaskarillas</small
+                    ></span
+                  >
+                  <i class="fa-solid fa-chevron-right text-muted"></i>
+                </a>
+              </div>
+              <div class="col-12">
+                <a
+                  href="mailto:contacto@korona.cl"
+                  class="contact-card shadow-sm d-flex align-items-center"
+                >
+                  <i class="fa-solid fa-envelope contact-icon bg-primary"></i>
+                  <span class="flex-grow-1"
+                    >Correo
+                    <small class="text-muted d-block"
+                      >contacto@korona.cl</small
+                    ></span
+                  >
+                  <i class="fa-solid fa-chevron-right text-muted"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Formulario flash -->
+            <form id="whForm" class="needs-validation" novalidate>
+              <div class="row g-2">
+                <div class="col-md-6">
+                  <input
+                    id="whName"
+                    type="text"
+                    class="form-control"
+                    placeholder="Nombre"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    id="whEmail"
+                    type="email"
+                    class="form-control"
+                    placeholder="Correo"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    id="whMsg"
+                    rows="3"
+                    class="form-control"
+                    placeholder="Mensaje"
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-12 d-grid">
+                  <button class="btn btn-disney" type="submit">
+                    Enviar WhatsApp ✨
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Col derecha: ilustración -->
+          <div class="col-12 col-lg-7 text-center">
+            <div class="taller">
+              <img
+                src="taller.png"
+                class="img-fluid rounded-circle shadow-lg animate__animated animate__fadeInRight"
+                alt="Taller Korona"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER BONITO -->
+    <footer class="site-footer text-white position-relative">
+      <!-- Onda decorativa superior -->
+      <svg
+        class="footer-wave w-100"
+        viewBox="0 0 1440 80"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0,32L60,26.7C120,21,240,11,360,10.7C480,11,600,21,720,26.7C840,32,960,32,1080,37.3C1200,43,1320,53,1380,58.7L1440,64V0H0Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+
+      <div class="container pt-5 pb-3">
+        <div class="row g-4">
+          <!-- Logo -->
+          <div class="col-12 col-md-3 text-center text-md-start">
+            <img
+              src="logo.png"
+              alt="Korona Logo"
+              class="footer-logo mb-3 mb-md-0"
+            />
+          </div>
+
+          <!-- Social -->
+          <div class="col-12 col-md-3">
+            <h6 class="footer-title">Síguenos</h6>
+            <div class="d-flex gap-3">
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="footer-icon fab fa-facebook-f"
+              ></a>
+              <a
+                href="#"
+                aria-label="Twitter"
+                class="footer-icon fab fa-x-twitter"
+              ></a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="footer-icon fab fa-instagram"
+              ></a>
+            </div>
+          </div>
+
+          <!-- Info links -->
+          <div class="col-12 col-md-3">
+            <h6 class="footer-title">Información</h6>
+            <ul class="list-unstyled">
+              <li><a href="#info" class="footer-link">Cómo comprar</a></li>
+              <li><a href="#info" class="footer-link">Envíos</a></li>
+              <li><a href="#info" class="footer-link">Devoluciones</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-12 col-md-3">
+            <h6 class="footer-title">Novedades</h6>
+            <form
+              class="footer-news"
+              onsubmit="event.preventDefault(); alert('¡Suscripción enviada!');"
+            >
+              <input
+                type="email"
+                class="form-control form-control-sm"
+                placeholder="Tu correo"
+                required
+              />
+              <button class="btn btn-disney w-100 mt-2 btn-sm">
+                Suscribirme
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <p class="text-center small mb-0 opacity-75">
+          © <span id="year"></span> Korona.cl – Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a
+      id="whatsapp-float"
+      href="https://wa.me/56912345678"
+      target="_blank"
+      aria-label="WhatsApp"
+      ><i class="fab fa-whatsapp"></i
+    ></a>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      // ——— Año dinámico ———
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // ——— Navbar sombra on scroll ———
+      const navbar = document.getElementById("mainNav");
+      window.addEventListener("scroll", () => {
+        navbar.classList.toggle("scrolled", window.scrollY > 50);
+      });
+
+      // ——— Cerrar menú colapsado al hacer clic ———
+      const navCollapseEl = document.getElementById("navContent");
+      const navLinks = navCollapseEl.querySelectorAll(".nav-link");
+      const bsCollapse = new bootstrap.Collapse(navCollapseEl, {
+        toggle: false,
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (navCollapseEl.classList.contains("show")) bsCollapse.hide();
+        });
+      });
+
+      // ——— ScrollReveal ———
+      ScrollReveal({
+        distance: "60px",
+        duration: 1200,
+        delay: 50,
+        reset: false,
+      });
+      ScrollReveal().reveal("#categorias .category-card", {
+        interval: 120,
+        origin: "bottom",
+      });
+      ScrollReveal().reveal("#productos .product-card", {
+        interval: 120,
+        origin: "bottom",
+      });
+      ScrollReveal().reveal("#info", { origin: "bottom" });
+      ScrollReveal().reveal("#contacto .col-md-6", {
+        interval: 200,
+        origin: "left",
+      });
+
+      // ——— Scroll suave con offset dinámico ———
+      const navHeight = navbar.offsetHeight;
+      window.scrollToSection = (id) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const y =
+          el.getBoundingClientRect().top + window.pageYOffset - navHeight + 4; // +4 para no pegarse
+        window.scrollTo({ top: y, behavior: "smooth" });
+      };
+      // ——— WhatsApp submit personalizado ———
+      document.getElementById("whForm").addEventListener("submit", (e) => {
+        e.preventDefault(); // evita recarga
+
+        // Validación bootstrap
+        const form = e.target;
+        if (!form.checkValidity()) {
+          form.classList.add("was-validated");
+          return;
+        }
+
+        // Datos del cliente
+        const nombre = document.getElementById("whName").value.trim();
+        const correo = document.getElementById("whEmail").value.trim();
+        const mensaje = document.getElementById("whMsg").value.trim();
+
+        // Armamos texto para WhatsApp (+ saltos de línea codificados)
+        const texto = encodeURIComponent(
+          `Nombre: ${nombre} | ` +
+            `Correo: ${correo} | ` +
+            `Mensaje: ${mensaje}`
+        );
+
+        // Reemplaza con tu número en formato internacional sin +
+        const numero = "56912345678";
+        const url = `https://wa.me/${numero}?text=${texto}`;
+
+        window.open(url, "_blank"); // abre chat en pestaña nueva
+      });
+    </script>
+  </body>
+</html>
