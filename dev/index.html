@@ -47,6 +47,113 @@
       .scroll-animate {
         opacity: 0;
       }
+      .glitter-container {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .glitter-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .glitter-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .glitter-particle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: linear-gradient(45deg, #fff, #ffd700, #ff69b4, #00ffff);
+        border-radius: 50%;
+        opacity: 0;
+        animation: glitterAnimation 3s infinite;
+      }
+
+      .glitter-particle:nth-child(odd) {
+        animation-delay: 0.5s;
+      }
+
+      .glitter-particle:nth-child(3n) {
+        animation-delay: 1s;
+        background: linear-gradient(45deg, #ff1493, #00ff00, #ffd700);
+      }
+
+      .glitter-particle:nth-child(4n) {
+        animation-delay: 1.5s;
+        background: linear-gradient(45deg, #ff4500, #9400d3, #00bfff);
+      }
+
+      .glitter-particle:nth-child(5n) {
+        animation-delay: 2s;
+        background: linear-gradient(45deg, #32cd32, #ff6347, #dda0dd);
+      }
+
+      @keyframes glitterAnimation {
+        0% {
+          opacity: 0;
+          transform: scale(0) rotate(0deg);
+        }
+        10% {
+          opacity: 0.8;
+          transform: scale(1) rotate(90deg);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.2) rotate(180deg);
+        }
+        90% {
+          opacity: 0.8;
+          transform: scale(1) rotate(450deg);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0) rotate(540deg);
+        }
+      }
+
+      .glitter-particle.small {
+        width: 2px;
+        height: 2px;
+      }
+
+      .glitter-particle.medium {
+        width: 3px;
+        height: 3px;
+      }
+
+      .glitter-particle.large {
+        width: 6px;
+        height: 6px;
+      }
+
+      .glitter-particle.star {
+        border-radius: 0;
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+      }
+
+      .glitter-particle.diamond {
+        border-radius: 0;
+        transform: rotate(45deg);
+      }
     </style>
   </head>
   <body class="bg-pink-50 text-gray-800">
@@ -257,10 +364,14 @@
 
       <!-- =========== Banner Oferta Maskarillas =========== -->
       <section
-        class="py-12 bg-pink-200 scroll-animate"
+        class="py-12 bg-pink-200 scroll-animate glitter-container"
         data-animation="animate__pulse"
       >
-        <div class="container mx-auto px-6 text-center">
+        <!-- Capa de glitter -->
+        <div class="glitter-layer"></div>
+
+        <!-- Tu contenido original con clase glitter-content -->
+        <div class="container mx-auto px-6 text-center glitter-content">
           <h2 class="text-2xl md:text-3xl font-bold text-purple-700 mb-2">
             ¡Oferta Especial en Maskarillas!
           </h2>
@@ -270,8 +381,9 @@
           <a
             href="#productos"
             class="nav-link inline-block bg-white text-purple-700 font-bold py-3 px-8 rounded-full transition duration-300 hover:bg-gray-200"
-            >Ver Diseños</a
           >
+            Ver Diseños
+          </a>
         </div>
       </section>
 
@@ -612,7 +724,7 @@
             />
             <h3 class="text-2xl font-bold mb-2">Korona</h3>
             <p class="text-purple-300">
-              Diseños únicos.<br>Hechos a mano en 🇨🇱
+              Diseños únicos.<br />Hechos a mano en 🇨🇱
             </p>
           </div>
           <!-- Columna 2: Links Rápidos -->
@@ -818,6 +930,179 @@
             )}`;
             window.open(whatsappUrl, "_blank");
           });
+      });
+    </script>
+    <script>
+      class GlitterEffect {
+        constructor(container, options = {}) {
+          this.container = container;
+          this.glitterLayer = container.querySelector(".glitter-layer");
+
+          // CONFIGURACIÓN - Modifica estos valores según tus necesidades
+          this.options = {
+            particleCount: options.particleCount || 60, // Número de partículas (muchas partículas)
+            spawnRate: options.spawnRate || 300, // Velocidad de aparición rápida en ms
+            colors: options.colors || [
+              // Colores de las partículas
+              "#fff",
+              "#ffd700",
+              "#ff69b4",
+              "#00ffff",
+              "#ff1493",
+              "#00ff00",
+              "#ff4500",
+              "#9400d3",
+            ],
+            shapes: options.shapes || ["circle", "star"], // Formas: 'circle', 'star', 'diamond'
+            sizes: options.sizes || ["small", "medium", "large"], // Tamaños disponibles
+            animationDuration: options.animationDuration || 8000, // Duración larga de animación (8 segundos)
+            intensity: options.intensity || 2, // Intensidad alta
+          };
+
+          this.particles = [];
+          this.isActive = true;
+
+          this.init();
+        }
+
+        init() {
+          this.createInitialParticles();
+          this.startAnimation();
+        }
+
+        createInitialParticles() {
+          for (let i = 0; i < this.options.particleCount; i++) {
+            this.createParticle();
+          }
+        }
+
+        createParticle() {
+          const particle = document.createElement("div");
+          particle.className = "glitter-particle";
+
+          // Posición aleatoria
+          const x = Math.random() * 100;
+          const y = Math.random() * 100;
+          particle.style.left = x + "%";
+          particle.style.top = y + "%";
+
+          // Tamaño aleatorio
+          const size =
+            this.options.sizes[
+              Math.floor(Math.random() * this.options.sizes.length)
+            ];
+          particle.classList.add(size);
+
+          // Forma aleatoria
+          const shape =
+            this.options.shapes[
+              Math.floor(Math.random() * this.options.shapes.length)
+            ];
+          if (shape !== "circle") {
+            particle.classList.add(shape);
+          }
+
+          // Color aleatorio
+          const color =
+            this.options.colors[
+              Math.floor(Math.random() * this.options.colors.length)
+            ];
+          if (shape === "circle") {
+            particle.style.background = `radial-gradient(circle, ${color}, transparent)`;
+          } else {
+            particle.style.background = color;
+          }
+
+          // Duración de animación larga y variable (6-12 segundos)
+          const duration = (Math.random() * 6 + 6) / this.options.intensity;
+          particle.style.animationDuration = duration + "s";
+
+          // Retraso aleatorio
+          const delay = Math.random() * 3;
+          particle.style.animationDelay = delay + "s";
+
+          this.glitterLayer.appendChild(particle);
+          this.particles.push(particle);
+
+          // Remover partícula después de la animación
+          setTimeout(() => {
+            if (particle.parentNode) {
+              particle.parentNode.removeChild(particle);
+              const index = this.particles.indexOf(particle);
+              if (index > -1) {
+                this.particles.splice(index, 1);
+              }
+            }
+          }, (duration + delay) * 1000);
+        }
+
+        startAnimation() {
+          if (!this.isActive) return;
+
+          this.animationInterval = setInterval(() => {
+            if (
+              this.isActive &&
+              this.particles.length <
+                this.options.particleCount * this.options.intensity
+            ) {
+              this.createParticle();
+            }
+          }, this.options.spawnRate / this.options.intensity);
+        }
+
+        destroy() {
+          clearInterval(this.animationInterval);
+          this.particles.forEach((particle) => {
+            if (particle.parentNode) {
+              particle.parentNode.removeChild(particle);
+            }
+          });
+          this.particles = [];
+        }
+      }
+
+      // AUTO-INICIALIZACIÓN
+      // Busca automáticamente todos los elementos con clase 'glitter-container' y les aplica el efecto
+      document.addEventListener("DOMContentLoaded", function () {
+        const glitterContainers =
+          document.querySelectorAll(".glitter-container");
+
+        glitterContainers.forEach((container) => {
+          // CONFIGURACIÓN POR DEFECTO - Muchas partículas que duran mucho tiempo
+          new GlitterEffect(container, {
+            particleCount: 80, // Muchas partículas: 60=muchas, 80=abundantes, 100=lleno
+            spawnRate: 200, // Aparición muy rápida: 200=muy rápido, 300=rápido, 500=normal
+            intensity: 2, // Intensidad alta: 2=alta, 2.5=muy alta, 3=máxima
+            colors: [
+              // Personaliza los colores aquí
+              "#fff",
+              "#ffd700",
+              "#ff69b4",
+              "#00ffff",
+              "#ff1493",
+              "#32cd32",
+              "#ff4500",
+              "#9400d3",
+              "#ffb6c1",
+              "#98fb98",
+              "#87ceeb",
+              "#dda0dd",
+            ],
+            shapes: ["circle", "star"], // Formas: 'circle', 'star', 'diamond'
+            sizes: ["small", "medium", "large"], // Todos los tamaños para más variedad
+          });
+        });
+      });
+
+      // Cleanup cuando la página se cierra
+      window.addEventListener("beforeunload", () => {
+        // Limpiar todos los intervalos activos
+        const containers = document.querySelectorAll(".glitter-container");
+        containers.forEach((container) => {
+          if (container.glitterEffect) {
+            container.glitterEffect.destroy();
+          }
+        });
       });
     </script>
   </body>
