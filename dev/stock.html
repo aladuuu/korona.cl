@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stock de Diseños - Korona</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts: Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Font Awesome para íconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Estilos personalizados -->
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-        /* Estilos para el modal/lightbox */
-        .modal-overlay {
-            transition: opacity 0.3s ease;
-        }
-        .modal-image {
-            transition: transform 0.3s ease;
-        }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      /* Estilos para el modal/lightbox */
+      .modal-overlay {
+        transition: opacity 0.3s ease;
+      }
+      .modal-image {
+        transition: transform 0.3s ease;
+      }
     </style>
-</head>
-<body class="bg-pink-50 text-gray-800">
-
+  </head>
+  <body class="bg-pink-50 text-gray-800">
     <!-- =========== Header / Navegación =========== -->
     <header id="header" class="bg-white shadow-md fixed w-full top-0 z-50">
       <nav
@@ -47,7 +55,9 @@
           <span class="text-3xl font-bold text-pink-500">Korona</span>
         </a>
         <div class="hidden md:flex space-x-8">
-          <a href="./index.html" class="text-gray-600 hover:text-pink-500 nav-link"
+          <a
+            href="./index.html"
+            class="text-gray-600 hover:text-pink-500 nav-link"
             >Inicio</a
           >
           <a
@@ -118,81 +128,333 @@
     </header>
 
     <main id="maskarillas" class="pt-24 pb-16">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12 pt-6">
-                <h1 class="text-4xl md:text-5xl font-bold text-pink-500">Stock Maskarillas</h1mclass=>
-                <p class="text-lg text-gray-600 mt-2">¡Haz clic en uno para verlo en detalle!</p>
-            </div>
-            <!-- Galería de Imágenes -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                <!-- Genera 15 imágenes de placeholder -->
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/ec4899/ffffff?text=Floral+01" alt="Diseño Floral" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/f59e0b/ffffff?text=Leopardo" alt="Diseño Leopardo" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/8b5cf6/ffffff?text=Estrellas" alt="Diseño Estrellas" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/10b981/ffffff?text=Tropical" alt="Diseño Tropical" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/3b82f6/ffffff?text=Lunares" alt="Diseño Lunares" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/ef4444/ffffff?text=Corazones" alt="Diseño Corazones" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/4a5568/ffffff?text=Calaveras" alt="Diseño Calaveras" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/d946ef/ffffff?text=Galaxia" alt="Diseño Galaxia" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/65a30d/ffffff?text=Militar" alt="Diseño Militar" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/facc15/000000?text=Abejas" alt="Diseño Abejas" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/0891b2/ffffff?text=Ondas" alt="Diseño Ondas" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/f97316/ffffff?text=Abstracto" alt="Diseño Abstracto" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/be185d/ffffff?text=Floral+02" alt="Diseño Floral 02" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/1e40af/ffffff?text=Noche" alt="Diseño Noche" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/9d174d/ffffff?text=Frutas" alt="Diseño Frutas" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-            </div>
-            <div id="maskecuellos" class="text-center mb-12 pt-24">
-                <h1 class="text-4xl md:text-5xl font-bold text-pink-500">Stock Maskecuellos</h1>
-                <p class="text-lg text-gray-600 mt-2">¡Haz clic en uno para verlo en detalle!</p>
-            </div>
-            <!-- Galería de Imágenes -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                <!-- Genera 15 imágenes de placeholder -->
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/ec4899/ffffff?text=Floral+01" alt="Diseño Floral" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/f59e0b/ffffff?text=Leopardo" alt="Diseño Leopardo" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/8b5cf6/ffffff?text=Estrellas" alt="Diseño Estrellas" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/10b981/ffffff?text=Tropical" alt="Diseño Tropical" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/3b82f6/ffffff?text=Lunares" alt="Diseño Lunares" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/ef4444/ffffff?text=Corazones" alt="Diseño Corazones" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/4a5568/ffffff?text=Calaveras" alt="Diseño Calaveras" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/d946ef/ffffff?text=Galaxia" alt="Diseño Galaxia" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/65a30d/ffffff?text=Militar" alt="Diseño Militar" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/facc15/000000?text=Abejas" alt="Diseño Abejas" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/0891b2/ffffff?text=Ondas" alt="Diseño Ondas" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/f97316/ffffff?text=Abstracto" alt="Diseño Abstracto" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/be185d/ffffff?text=Floral+02" alt="Diseño Floral 02" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/1e40af/ffffff?text=Noche" alt="Diseño Noche" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/9d174d/ffffff?text=Frutas" alt="Diseño Frutas" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-            </div>
-            <div id="accesorios" class="text-center mb-12 pt-24">
-                <h1 class="text-4xl md:text-5xl font-bold text-pink-500">Stock Accesorios</h1>
-                <p class="text-lg text-gray-600 mt-2">¡Haz clic en uno para verlo en detalle!</p>
-            </div>
-            <!-- Galería de Imágenes -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                <!-- Genera 15 imágenes de placeholder -->
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/ec4899/ffffff?text=Floral+01" alt="Diseño Floral" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/f59e0b/ffffff?text=Leopardo" alt="Diseño Leopardo" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-                <a href="#" class="gallery-item"><img src="https://placehold.co/400x400/8b5cf6/ffffff?text=Estrellas" alt="Diseño Estrellas" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"></a>
-            </div>
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12 pt-6">
+          <h1 class="text-4xl md:text-5xl font-bold text-pink-500">
+            Stock Maskarillas
+          </h1>
+          <p class="text-lg text-gray-600 mt-2">
+            ¡Haz clic en uno para verlo en detalle!
+          </p>
         </div>
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+        >
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/1.jpg"
+              alt="Diseño Floral"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/2.jpg"
+              alt="Diseño Leopardo"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/3.jpg"
+              alt="Diseño Estrellas"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/4.jpg"
+              alt="Diseño Tropical"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/5.jpg"
+              alt="Diseño Lunares"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/6.jpg"
+              alt="Diseño Corazones"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/7.jpg"
+              alt="Diseño Calaveras"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/8.jpg"
+              alt="Diseño Galaxia"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/9.jpg"
+              alt="Diseño Militar"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/10.jpg"
+              alt="Diseño Abejas"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/11.jpg"
+              alt="Diseño Ondas"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/12.jpg"
+              alt="Diseño Abstracto"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/13.jpg"
+              alt="Diseño Floral 02"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/14.jpg"
+              alt="Diseño Noche"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/15.jpg"
+              alt="Diseño Frutas"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/16.jpg"
+              alt="Diseño 16"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/17.jpg"
+              alt="Diseño 17"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/18.jpg"
+              alt="Diseño 18"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/19.jpg"
+              alt="Diseño 19"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/20.jpg"
+              alt="Diseño 20"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/21.jpg"
+              alt="Diseño 21"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/22.jpg"
+              alt="Diseño 22"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/23.jpg"
+              alt="Diseño 23"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/24.jpg"
+              alt="Diseño 24"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/25.jpg"
+              alt="Diseño 25"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskarillas/26.jpg"
+              alt="Diseño 26"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+        </div>
+
+        <div id="maskecuellos" class="text-center mb-12 pt-24">
+          <h1 class="text-4xl md:text-5xl font-bold text-pink-500">
+            Stock Maskecuellos
+          </h1>
+          <p class="text-lg text-gray-600 mt-2">
+            ¡Haz clic en uno para verlo en detalle!
+          </p>
+        </div>
+        <!-- Galería de Imágenes -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+        >
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskecuellos/1.jpg"
+              alt="Diseño Estrellas"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskecuellos/2.jpg"
+              alt="Diseño Tropical"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskecuellos/3.jpg"
+              alt="Diseño Lunares"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskecuellos/4.jpg"
+              alt="Diseño Corazones"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskecuellos/5.jpg"
+              alt="Diseño Calaveras"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskecuellos/6.jpg"
+              alt="Diseño Galaxia"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskecuellos/7.jpg"
+              alt="Diseño Militar"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskecuellos/8.jpg"
+              alt="Diseño Abejas"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskecuellos/9.jpg"
+              alt="Diseño Ondas"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskecuellos/10.jpg"
+              alt="Diseño Abstracto"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskecuellos/11.jpg"
+              alt="Diseño Floral 02"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskecuellos/12.jpg"
+              alt="Diseño Noche"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/maskecuellos/13.jpg"
+              alt="Diseño Frutas"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+        </div>
+
+        <div id="accesorios" class="text-center mb-12 pt-24">
+          <h1 class="text-4xl md:text-5xl font-bold text-pink-500">
+            Stock Accesorios
+          </h1>
+          <p class="text-lg text-gray-600 mt-2">
+            ¡Haz clic en uno para verlo en detalle!
+          </p>
+        </div>
+        <!-- Galería de Imágenes -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+        >
+          <!-- Genera 15 imágenes de placeholder -->
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/accesorios/1.jpg"
+              alt="Diseño Floral"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/accesorios/2.jpg"
+              alt="Diseño Leopardo"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+          <a href="#" class="gallery-item"
+            ><img
+              src="./assets/img/accesorios/3.jpg"
+              alt="Diseño Estrellas"
+              class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-full object-cover cursor-pointer hover:scale-105 transform transition-transform"
+          /></a>
+        </div>
+      </div>
     </main>
-    
+
     <!-- Modal/Lightbox para imagen ampliada -->
-    <div id="image-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-[100] hidden opacity-0">
-        <div class="relative max-w-3xl max-h-full">
-            <img id="modal-image-content" src="" alt="Diseño ampliado" class="modal-image rounded-lg shadow-2xl w-auto h-auto max-w-full max-h-[85vh]">
-            <button id="modal-close-button" class="absolute -top-4 -right-4 bg-white text-gray-800 rounded-full w-10 h-10 flex items-center justify-center text-2xl font-bold hover:bg-gray-200">&times;</button>
-        </div>
+    <div
+      id="image-modal"
+      class="modal-overlay fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-[100] hidden opacity-0"
+    >
+      <div class="relative max-w-3xl max-h-full">
+        <img
+          id="modal-image-content"
+          src=""
+          alt="Diseño ampliado"
+          class="modal-image rounded-lg shadow-2xl w-auto h-auto max-w-full max-h-[85vh]"
+        />
+        <button
+          id="modal-close-button"
+          class="absolute -top-4 -right-4 bg-white text-gray-800 rounded-full w-10 h-10 flex items-center justify-center text-2xl font-bold hover:bg-gray-200"
+        >
+          &times;
+        </button>
+      </div>
     </div>
 
-
     <!-- =========== Botón Flotante de WhatsApp =========== -->
-    <a href="#" id="floating-whatsapp-button" class="fixed bottom-5 right-5 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110">
-        <i class="fab fa-whatsapp text-4xl"></i>
+    <a
+      href="#"
+      id="floating-whatsapp-button"
+      class="fixed bottom-5 right-5 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110"
+    >
+      <i class="fab fa-whatsapp text-4xl"></i>
     </a>
-    
+
     <!-- =========== Footer =========== -->
     <footer class="bg-purple-900 text-white mt-12">
       <div class="container mx-auto px-6 py-12">
@@ -209,7 +471,7 @@
             />
             <h3 class="text-2xl font-bold mb-2">Korona</h3>
             <p class="text-purple-300">
-              Diseños únicos.<br>Hechos a mano en 🇨🇱
+              Diseños únicos.<br />Hechos a mano en 🇨🇱
             </p>
           </div>
           <!-- Columna 2: Links Rápidos -->
@@ -303,53 +565,60 @@
 
     <!-- =========== JavaScript =========== -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // --- Set Copyright Year ---
-            document.getElementById('copyright-year').textContent = new Date().getFullYear();
-            
-            // --- Menú Móvil ---
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
+      document.addEventListener("DOMContentLoaded", function () {
+        // --- Set Copyright Year ---
+        document.getElementById("copyright-year").textContent =
+          new Date().getFullYear();
 
-            // --- Lógica de la Galería y Modal ---
-            const imageModal = document.getElementById('image-modal');
-            const modalImageContent = document.getElementById('modal-image-content');
-            const modalCloseButton = document.getElementById('modal-close-button');
-            
-            document.querySelectorAll('.gallery-item').forEach(item => {
-                item.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const imgSrc = this.querySelector('img').src;
-                    modalImageContent.src = imgSrc;
-                    imageModal.classList.remove('hidden');
-                    setTimeout(() => imageModal.classList.remove('opacity-0'), 10);
-                });
-            });
-            
-            function closeModal() {
-                imageModal.classList.add('opacity-0');
-                setTimeout(() => imageModal.classList.add('hidden'), 300);
-            }
-
-            modalCloseButton.addEventListener('click', closeModal);
-            imageModal.addEventListener('click', function(e) {
-                if (e.target === imageModal) {
-                    closeModal();
-                }
-            });
-
-            // --- Botón Flotante WhatsApp ---
-            const phoneNumber = '56912345678'; // IMPORTANTE: Reemplazar con tu número
-            document.getElementById('floating-whatsapp-button').addEventListener('click', function(e){
-                e.preventDefault();
-                const message = `¡Hola Korona! Tengo una consulta sobre el stock 😊`;
-                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                window.open(whatsappUrl, '_blank');
-            });
+        // --- Menú Móvil ---
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenuButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
         });
+
+        // --- Lógica de la Galería y Modal ---
+        const imageModal = document.getElementById("image-modal");
+        const modalImageContent = document.getElementById(
+          "modal-image-content"
+        );
+        const modalCloseButton = document.getElementById("modal-close-button");
+
+        document.querySelectorAll(".gallery-item").forEach((item) => {
+          item.addEventListener("click", function (e) {
+            e.preventDefault();
+            const imgSrc = this.querySelector("img").src;
+            modalImageContent.src = imgSrc;
+            imageModal.classList.remove("hidden");
+            setTimeout(() => imageModal.classList.remove("opacity-0"), 10);
+          });
+        });
+
+        function closeModal() {
+          imageModal.classList.add("opacity-0");
+          setTimeout(() => imageModal.classList.add("hidden"), 300);
+        }
+
+        modalCloseButton.addEventListener("click", closeModal);
+        imageModal.addEventListener("click", function (e) {
+          if (e.target === imageModal) {
+            closeModal();
+          }
+        });
+
+        // --- Botón Flotante WhatsApp ---
+        const phoneNumber = "56912345678"; // IMPORTANTE: Reemplazar con tu número
+        document
+          .getElementById("floating-whatsapp-button")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            const message = `¡Hola Korona! Tengo una consulta sobre el stock 😊`;
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+              message
+            )}`;
+            window.open(whatsappUrl, "_blank");
+          });
+      });
     </script>
-</body>
+  </body>
 </html>
