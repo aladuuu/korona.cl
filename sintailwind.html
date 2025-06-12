@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korona - Estilo y Diseño Único</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Animate.css para animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Estilos CSS Personalizados -->
+    <style>
+        /* --- RESET Y ESTILOS GLOBALES --- */
+        :root {
+            --pink-100: #fce7f3;
+            --pink-200: #fbcfe8;
+            --pink-500: #ec4899;
+            --pink-600: #db2777;
+            --purple-300: #d8b4fe;
+            --purple-700: #7e22ce;
+            --purple-800: #6b21a8;
+            --purple-900: #581c87;
+            --green-500: #22c55e;
+            --green-600: #16a34a;
+            --yellow-200: #fef08a;
+            --yellow-800: #854d0e;
+            --gray-300: #d1d5db;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-800: #1f2937;
+            --white: #ffffff;
+            --black: #000000;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--pink-100);
+            color: var(--gray-800);
+            margin: 0;
+            padding-top: 68px; /* Para el header fijo */
+        }
+
+        .container {
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .scroll-animate {
+            opacity: 0;
+        }
+
+        /* --- HEADER Y NAVEGACIÓN --- */
+        .site-header {
+            background-color: var(--white);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 50;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        
+        .navbar__logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .navbar__logo img {
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 9999px;
+            object-fit: cover;
+        }
+
+        .navbar__logo-text {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: var(--pink-500);
+        }
+
+        .navbar__links {
+            display: none;
+            gap: 2rem;
+        }
+
+        .navbar__link {
+            color: var(--gray-600);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .navbar__link:hover {
+            color: var(--pink-500);
+        }
+        
+        .mobile-menu-button {
+            display: block;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        .mobile-menu-button svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu.active {
+            display: block;
+        }
+        .mobile-menu a {
+            display: block;
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            text-decoration: none;
+            color: var(--gray-800);
+        }
+        .mobile-menu a:hover {
+            background-color: var(--pink-100);
+        }
+
+
+        /* --- HERO SECTION --- */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 85vh;
+            overflow: hidden;
+        }
+
+        .carousel-item {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding: 1rem;
+        }
+        
+        .hero-title {
+            font-size: 2.25rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .hero-subtitle {
+            margin-top: 1rem;
+            font-size: 1.125rem;
+            font-weight: 300;
+        }
+        
+        .hero-button {
+            display: inline-block;
+            margin-top: 2rem;
+            background-color: var(--pink-500);
+            color: var(--white);
+            font-weight: 700;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .hero-button:hover {
+            background-color: var(--pink-600);
+        }
+        .hero-button.alt {
+            background-color: var(--white);
+            color: var(--pink-500);
+        }
+         .hero-button.alt:hover {
+            background-color: #f3f4f6;
+        }
+         .hero-button.purple {
+            background-color: var(--purple-500);
+        }
+        .hero-button.purple:hover {
+            background-color: var(--purple-600);
+        }
+
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255,255,255,0.5);
+            padding: 0.5rem;
+            border-radius: 9999px;
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .carousel-control:hover {
+            background-color: rgba(255,255,255,0.8);
+        }
+        .carousel-control.prev { left: 1rem; }
+        .carousel-control.next { right: 1rem; }
+        .carousel-control svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            color: var(--gray-800);
+        }
+
+        /* --- SECCIONES GENÉRICAS Y BANNERS --- */
+        .section {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+        .section-white { background-color: var(--white); }
+
+        .banner {
+            text-align: center;
+        }
+        .banner-offer { background-color: var(--pink-200); }
+        .banner-shipping { background-color: var(--purple-700); color: var(--white); }
+
+        .banner-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .banner-offer .banner-title { color: var(--purple-700); }
+        
+        .banner-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .banner-offer .banner-subtitle { color: var(--purple-600); }
+        .banner-shipping .banner-subtitle { color: var(--purple-200); }
+
+        .banner-button {
+            display: inline-block;
+            background-color: var(--white);
+            color: var(--purple-700);
+            font-weight: 700;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .banner-button:hover {
+            background-color: #f3f4f6;
+        }
+        .banner-shipping p {
+            font-size: 0.875rem;
+            color: var(--purple-300);
+            margin-top: 0.75rem;
+        }
+        .banner-shipping p span {
+            font-weight: 700;
+            color: var(--white);
+        }
+        
+        /* --- SECCIÓN QUIENES SOMOS --- */
+        .about-grid {
+            display: grid;
+            gap: 3rem;
+            align-items: center;
+        }
+        .about-text { text-align: center; }
+        .about-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: var(--pink-500);
+            margin-bottom: 1rem;
+        }
+        .about-text p {
+            font-size: 1.125rem;
+            color: var(--gray-600);
+            margin-bottom: 1rem;
+        }
+        .about-image img {
+            width: 100%;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+        }
+        
+        /* --- SECCIÓN PRODUCTOS --- */
+        .products-section { padding-top: 4rem; padding-bottom: 4rem; }
+        .section-title-container { text-align: center; margin-bottom: 3rem; }
+        .section-title { font-size: 1.875rem; font-weight: 700; color: var(--pink-500); }
+        .section-subtitle { font-size: 1.125rem; margin-top: 0.5rem; color: var(--gray-600); }
+
+        .products-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 1fr;
+        }
+        
+        .product-card {
+            background-color: var(--white);
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .product-card__image-wrapper { overflow: hidden; }
+        .product-card__image {
+            width: 100%;
+            height: 16rem;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .product-card:hover .product-card__image {
+            transform: scale(1.1);
+        }
+        
+        .product-card__info { padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; }
+        .product-card__title { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .product-card__description { color: var(--gray-600); margin-bottom: 0.5rem; }
+        .product-card__shipping-info { font-size: 0.75rem; color: var(--gray-500); margin-top: 0.25rem; margin-bottom: 0.5rem; }
+        .product-card__catalog-link { font-size: 0.875rem; color: var(--pink-500); margin-bottom: 0.5rem; text-decoration: none; }
+        .product-card__catalog-link:hover { text-decoration: underline; }
+        
+        .product-card__offer {
+            background-color: var(--yellow-200);
+            color: var(--yellow-800);
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .product-card__offer-details { display: block; font-size: 0.75rem; font-weight: 400; margin-top: 0.25rem; }
+        
+        .product-card__buy-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            margin-top: auto; /* Pushes to bottom */
+        }
+        .product-card__price { font-size: 1.5rem; font-weight: 700; color: var(--pink-500); }
+        .product-card__quantity {
+            width: 4rem;
+            padding: 0.5rem;
+            text-align: center;
+            border: 1px solid var(--gray-300);
+            border-radius: 0.5rem;
+        }
+        .product-card__quantity:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--pink-200);
+        }
+        
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: var(--green-500);
+            color: var(--white);
+            font-weight: 700;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .whatsapp-button:hover { background-color: var(--green-600); }
+        .whatsapp-button i { margin-right: 0.5rem; }
+        
+        /* --- CONTACTO --- */
+        .contact-form-wrapper { max-width: 48rem; margin: 0 auto; }
+        .contact-form { display: grid; gap: 1.5rem; }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid var(--gray-300);
+            box-sizing: border-box;
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--pink-200);
+        }
+        .contact-form-submit {
+            background-color: var(--pink-500);
+            color: var(--white);
+            font-weight: 700;
+            padding: 0.75rem 3rem;
+            border-radius: 9999px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 0 auto;
+        }
+        .contact-form-submit:hover { background-color: var(--pink-600); }
+
+        /* --- FOOTER --- */
+        .site-footer {
+            background-color: var(--purple-900);
+            color: var(--white);
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        .footer-grid { display: grid; gap: 2rem; }
+        .footer-col { text-align: center; }
+        .footer-logo-wrapper { display: flex; flex-direction: column; align-items: center; }
+        .footer-logo { height: 3.5rem; width: 3.5rem; border-radius: 9999px; object-fit: cover; margin-bottom: 0.75rem; }
+        .footer-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .footer-subtitle { color: var(--purple-300); }
+        .footer-heading { font-weight: 700; font-size: 1.125rem; margin-bottom: 1rem; }
+        .footer-links { list-style: none; padding: 0; margin: 0; }
+        .footer-links li { margin-bottom: 0.5rem; }
+        .footer-links a { color: var(--purple-300); text-decoration: none; transition: color 0.3s; }
+        .footer-links a:hover { color: var(--white); }
+        .footer-socials { display: flex; justify-content: center; gap: 1.5rem; }
+        .footer-socials a { color: var(--purple-300); text-decoration: none; transition: transform 0.3s, color 0.3s; }
+        .footer-socials a:hover { color: var(--white); transform: scale(1.25); }
+        .footer-socials i { font-size: 1.5rem; }
+        
+        .footer-bottom {
+            border-top: 1px solid var(--purple-800);
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--purple-300);
+        }
+        .footer-bottom p { margin: 0; }
+        .footer-bottom .web-credit { margin-top: 0.25rem; }
+        .footer-bottom a { color: inherit; text-decoration: none; transition: color 0.3s; }
+        .footer-bottom a:hover { color: var(--white); }
+        
+        /* --- BOTÓN FLOTANTE WHATSAPP --- */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 1.25rem;
+            right: 1.25rem;
+            width: 4rem;
+            height: 4rem;
+            background-color: var(--green-500);
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+            transition: transform 0.3s, background-color 0.3s;
+            text-decoration: none;
+            z-index: 40;
+        }
+        .floating-whatsapp:hover {
+            background-color: var(--green-600);
+            transform: scale(1.1);
+        }
+        .floating-whatsapp i {
+            font-size: 2.25rem;
+        }
+
+        /* --- MEDIA QUERIES (RESPONSIVE) --- */
+        @media (min-width: 768px) {
+            .navbar__links { display: flex; }
+            .mobile-menu-button { display: none; }
+            .hero-title { font-size: 4.5rem; }
+            .hero-subtitle { font-size: 1.5rem; }
+            .section { padding-top: 6rem; padding-bottom: 6rem; }
+            .banner-title { font-size: 1.875rem; }
+            .about-grid { grid-template-columns: 1fr 1fr; }
+            .about-text { text-align: left; }
+            .footer-grid { grid-template-columns: 1fr 1fr 1fr; }
+            .footer-col, .footer-logo-wrapper { align-items: flex-start; text-align: left; }
+            .footer-socials { justify-content: flex-start; }
+        }
+
+        @media (min-width: 640px) {
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (min-width: 1024px) {
+            .products-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- =========== Header / Navegación =========== -->
+    <header class="site-header">
+        <nav class="container navbar">
+            <a href="#" class="navbar__logo">
+                <img src="https://i.ibb.co/WNtW5dJ/IMG-3260.jpg" alt="Logo de Korona" onerror="this.style.display='none'">
+                <span class="navbar__logo-text">Korona</span>
+            </a>
+            <div class="navbar__links">
+                <a href="#hero" class="navbar__link nav-link">Inicio</a>
+                <a href="#quienes-somos" class="navbar__link nav-link">Quiénes Somos</a>
+                <a href="#productos" class="navbar__link nav-link">Productos</a>
+                <a href="#contacto" class="navbar__link nav-link">Contacto</a>
+            </div>
+            <button id="mobile-menu-button" class="mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#hero" class="nav-link">Inicio</a>
+            <a href="#quienes-somos" class="nav-link">Quiénes Somos</a>
+            <a href="#productos" class="nav-link">Productos</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- =========== Hero Section con Carrusel =========== -->
+        <section id="hero" class="hero">
+            <div id="hero-carousel">
+                <div class="carousel-item" style="background-image: url('https://placehold.co/1920x1080/fbcfe8/4a044e?text=Korona');">
+                    <div class="hero-overlay">
+                        <div>
+                            <h1 class="hero-title text-shadow animate__animated animate__fadeInDown">Dale color a tu estilo</h1>
+                            <p class="hero-subtitle text-shadow animate__animated animate__fadeInUp animate__delay-1s">Maskarillas y Maskecuellos con diseños únicos.</p>
+                            <a href="#productos" class="nav-link hero-button animate__animated animate__pulse animate__delay-2s animate__infinite">Ver Colección</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('https://placehold.co/1920x1080/f472b6/ffffff?text=Estampados+Florales');">
+                     <div class="hero-overlay">
+                        <div>
+                            <h1 class="hero-title text-shadow">Protección y Diseño</h1>
+                            <p class="hero-subtitle text-shadow">Descubre nuestros vibrantes estampados.</p>
+                            <a href="#productos" class="nav-link hero-button alt">Ver Diseños</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('https://placehold.co/1920x1080/d946ef/ffffff?text=Hecho+a+Mano');">
+                    <div class="hero-overlay">
+                        <div>
+                            <h1 class="hero-title text-shadow">Hecho con Amor</h1>
+                            <p class="hero-subtitle text-shadow">Por jóvenes emprendedoras Chilenas.</p>
+                            <a href="#quienes-somos" class="nav-link hero-button purple">Conócenos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="prevBtn" class="carousel-control prev"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg></button>
+            <button id="nextBtn" class="carousel-control next"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button>
+        </section>
+
+        <!-- =========== Banner Oferta Maskarillas =========== -->
+        <section class="section banner banner-offer scroll-animate" data-animation="animate__pulse">
+            <div class="container">
+                <h2 class="banner-title">¡Oferta Especial en Maskarillas!</h2>
+                <p class="banner-subtitle">Lleva 3 unidades por solo $12.000</p>
+                <a href="#productos" class="nav-link banner-button">Ver Diseños</a>
+            </div>
+        </section>
+
+        <!-- =========== Quiénes Somos =========== -->
+        <section id="quienes-somos" class="section section-white">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text scroll-animate" data-animation="animate__fadeInLeft">
+                        <h2 class="about-title">Nuestra Historia</h2>
+                        <p>Somos Korona, un grupo de amigas de entre 15 y 20 años unidas por una pasión: el diseño y la moda. Lo que empezó como un pasatiempo creando accesorios para nosotras, se convirtió en un sueño por compartir nuestro estilo.</p>
+                        <p>Cada producto que ves aquí está hecho con amor, pensando en entregar un toque de color, alegría y personalidad. Creemos que los accesorios son una forma de expresión, ¡y queremos que te expreses con Korona!</p>
+                    </div>
+                    <div class="about-image scroll-animate" data-animation="animate__fadeInRight">
+                        <img src="https://placehold.co/600x400/fecdd3/be185d?text=Nosotras" alt="[Imagen del equipo de Korona]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Banner de Envíos =========== -->
+        <section class="section banner banner-shipping scroll-animate" data-animation="animate__fadeIn">
+            <div class="container">
+                <h2 class="banner-title">¡Llegamos a todo Chile!</h2>
+                <p class="banner-subtitle">Envíos por pagar vía Starken, Chilexpress y Correos de Chile.</p>
+                <a href="#" class="banner-button">Calcula tu Envío</a>
+                <p>Al cotizar, recuerda especificar <span>Las Condes</span> como comuna de origen.</p>
+            </div>
+        </section>
+
+        <!-- =========== Nuestros Productos =========== -->
+        <section id="productos" class="products-section">
+            <div class="container">
+                <div class="section-title-container scroll-animate" data-animation="animate__fadeInDown">
+                    <h2 class="section-title">Nuestros Productos</h2>
+                    <p class="section-subtitle">Hechos a mano con diseños que te encantarán.</p>
+                </div>
+                <div class="products-grid">
+                    <!-- Producto: Maskarilla -->
+                    <div class="product-card scroll-animate" data-animation="animate__fadeInUp">
+                        <div class="product-card__image-wrapper"><img src="https://placehold.co/600x600/f472b6/ffffff?text=Maskarillas" alt="[Imagen de mascarillas de colores]" class="product-card__image"></div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__title">Maskarilla Triple Capa</h3>
+                            <p class="product-card__description">Protección y estilo con nuestros diseños únicos.</p>
+                            <p class="product-card__shipping-info">🇨🇱 Despacho a todo Chile</p>
+                            <a href="/pdf/catalogo_maskarilla_triple_capa.pdf" target="_blank" class="product-card__catalog-link">Ver en catálogo</a>
+                            <div class="product-card__offer">¡OFERTA! 3 por $12.000<span class="product-card__offer-details">(No incluye "negra tachas" ni "jeans coke")</span></div>
+                            <div class="product-card__buy-section">
+                               <span class="product-card__price">$5.000</span>
+                               <input type="number" value="1" min="1" class="product-card__quantity">
+                            </div>
+                            <a href="#" class="whatsapp-button whatsapp-product-button"><i class="fab fa-whatsapp"></i> Comprar</a>
+                        </div>
+                    </div>
+                    <!-- Producto: Maskecuello -->
+                    <div class="product-card scroll-animate" data-animation="animate__fadeInUp" style="animation-delay: 0.1s;">
+                        <div class="product-card__image-wrapper"><img src="https://placehold.co/600x600/8b5cf6/ffffff?text=Maskecuellos" alt="[Imagen de maskecuellos de colores]" class="product-card__image"></div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__title">Maskecuello Triple Capa</h3>
+                            <p class="product-card__description">La comodidad de un cuello con la protección de una mascarilla.</p>
+                            <p class="product-card__shipping-info">🇨🇱 Despacho a todo Chile</p>
+                            <a href="/pdf/catalogo_maskecuello_triple_capa.pdf" target="_blank" class="product-card__catalog-link">Ver en catálogo</a>
+                             <div class="product-card__buy-section">
+                               <span class="product-card__price">$8.000</span>
+                               <input type="number" value="1" min="1" class="product-card__quantity">
+                            </div>
+                            <a href="#" class="whatsapp-button whatsapp-product-button"><i class="fab fa-whatsapp"></i> Comprar</a>
+                        </div>
+                    </div>
+                    <!-- Producto: Ajuste Orejas -->
+                    <div class="product-card scroll-animate" data-animation="animate__fadeInUp" style="animation-delay: 0.2s;">
+                        <div class="product-card__image-wrapper"><img src="https://placehold.co/600x600/34d399/ffffff?text=Accesorios" alt="[Imagen de ajuste para orejas]" class="product-card__image"></div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__title">Ajuste para Orejas</h3>
+                            <p class="product-card__description">Mayor comodidad para tus mascarillas. Evita la tensión.</p>
+                            <p class="product-card__shipping-info">🇨🇱 Despacho a todo Chile</p>
+                             <a href="/pdf/catalogo_ajuste_para_orejas.pdf" target="_blank" class="product-card__catalog-link">Ver en catálogo</a>
+                             <div class="product-card__buy-section">
+                               <span class="product-card__price">$1.000</span>
+                               <input type="number" value="1" min="1" class="product-card__quantity">
+                            </div>
+                            <a href="#" class="whatsapp-button whatsapp-product-button"><i class="fab fa-whatsapp"></i> Comprar</a>
+                        </div>
+                    </div>
+                    <!-- Producto: Soporte Nasal -->
+                    <div class="product-card scroll-animate" data-animation="animate__fadeInUp" style="animation-delay: 0.3s;">
+                        <div class="product-card__image-wrapper"><img src="https://placehold.co/600x600/60a5fa/ffffff?text=Accesorios" alt="[Imagen de soporte nasal de aluminio]" class="product-card__image"></div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__title">Soporte Nasal de Aluminio</h3>
+                            <p class="product-card__description">Mejora el ajuste y evita que se empañen los lentes.</p>
+                            <p class="product-card__shipping-info">🇨🇱 Despacho a todo Chile</p>
+                            <a href="/pdf/catalogo_soporte_nasal_de_aluminio.pdf" target="_blank" class="product-card__catalog-link">Ver en catálogo</a>
+                             <div class="product-card__buy-section">
+                               <span class="product-card__price">$1.000</span>
+                               <input type="number" value="1" min="1" class="product-card__quantity">
+                            </div>
+                            <a href="#" class="whatsapp-button whatsapp-product-button"><i class="fab fa-whatsapp"></i> Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Contacto =========== -->
+        <section id="contacto" class="section section-white">
+            <div class="container">
+                 <div class="section-title-container scroll-animate" data-animation="animate__fadeInUp">
+                    <h2 class="section-title">Contáctanos</h2>
+                    <p class="section-subtitle">¿Tienes alguna pregunta? ¡Escríbenos!</p>
+                </div>
+                <div class="contact-form-wrapper scroll-animate" data-animation="animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <form action="#" method="POST" class="contact-form">
+                        <input type="text" placeholder="Tu Nombre" required>
+                        <input type="email" placeholder="Tu Email" required>
+                        <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                        <button type="submit" class="contact-form-submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- =========== Botón Flotante de WhatsApp =========== -->
+    <a href="#" id="floating-whatsapp-button" class="floating-whatsapp animate__animated animate__fadeInUp animate__delay-2s">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- =========== Footer =========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Logo e Info -->
+                <div class="footer-col footer-logo-wrapper">
+                    <img src="https://i.ibb.co/WNtW5dJ/IMG-3260.jpg" alt="Logo de Korona" class="footer-logo" onerror="this.style.display='none'">
+                    <h3 class="footer-title">Korona</h3>
+                    <p class="footer-subtitle">Diseños únicos para mujeres audaces. Hechos a mano con amor en Chile.</p>
+                </div>
+                <!-- Columna 2: Links Rápidos -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#hero" class="nav-link">Inicio</a></li>
+                        <li><a href="#quienes-somos" class="nav-link">Quiénes Somos</a></li>
+                        <li><a href="#productos" class="nav-link">Productos</a></li>
+                        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Columna 3: Redes Sociales -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Síguenos</h3>
+                    <div class="footer-socials">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyright-year"></span> Korona.cl - Todos los derechos reservados.</p>
+                <p class="web-credit">Web by <a href="https://blackbelt.cl" target="_blank" rel="noopener noreferrer">blackbelt</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========== JavaScript =========== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- Set Copyright Year ---
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+            // --- Lógica de Animación al Hacer Scroll ---
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const animationClass = entry.target.getAttribute('data-animation');
+                        entry.target.classList.add('animate__animated', animationClass);
+                        entry.target.style.opacity = '1';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.scroll-animate').forEach(element => {
+                observer.observe(element);
+            });
+            
+            // --- Menú Móvil ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+            });
+
+            // --- Lógica del Carrusel Principal ---
+            const heroCarousel = document.getElementById('hero-carousel');
+            const slides = heroCarousel.querySelectorAll('.carousel-item');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+
+            function updateCarousel() {
+                slides.forEach((slide, index) => {
+                    slide.style.transform = `translateX(${(index - currentSlide) * 100}%)`;
+                    slide.style.opacity = index === currentSlide ? '1' : '0';
+                    slide.style.zIndex = index === currentSlide ? '1' : '0';
+                });
+            }
+
+            function showNextSlide() { currentSlide = (currentSlide + 1) % totalSlides; updateCarousel(); }
+            function showPrevSlide() { currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; updateCarousel(); }
+
+            nextBtn.addEventListener('click', showNextSlide);
+            prevBtn.addEventListener('click', showPrevSlide);
+            setInterval(showNextSlide, 5000);
+            updateCarousel();
+
+            // --- Lógica de Scroll Suave ---
+            document.querySelectorAll('a.nav-link').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                        if (mobileMenu && mobileMenu.classList.contains('active')) {
+                            mobileMenu.classList.remove('active');
+                        }
+                    }
+                });
+            });
+
+            // --- Lógica de Botones WhatsApp ---
+            const phoneNumber = '56912345678'; // IMPORTANTE: Reemplazar con tu número
+
+            // Para botones de productos
+            document.querySelectorAll('.whatsapp-product-button').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const card = this.closest('.product-card');
+                    const productName = card.querySelector('.product-card__title').innerText;
+                    const quantity = card.querySelector('.product-card__quantity').value;
+                    const message = `¡Hola Korona! Me interesa comprar:\n\n*Producto:* ${productName}\n*Cantidad:* ${quantity}\n\nQuedo a la espera de su respuesta. ¡Gracias! 😊`;
+                    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, '_blank');
+                });
+            });
+
+            // Para botón flotante
+            document.getElementById('floating-whatsapp-button').addEventListener('click', function(e){
+                e.preventDefault();
+                const message = `¡Hola Korona! Tengo una consulta sobre sus productos 😊`;
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
