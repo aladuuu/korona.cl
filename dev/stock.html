@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stock de Diseños - Korona</title>
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +14,6 @@
       rel="stylesheet"
     />
 
-    <!-- Font Awesome para íconos -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -25,12 +22,10 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Estilos personalizados -->
     <style>
       body {
         font-family: "Poppins", sans-serif;
       }
-      /* Estilos para el modal/lightbox */
       .modal-overlay {
         transition: opacity 0.3s ease;
       }
@@ -40,7 +35,6 @@
     </style>
   </head>
   <body class="bg-pink-50 text-gray-800">
-    <!-- =========== Header / Navegación =========== -->
     <header id="header" class="bg-white shadow-md fixed w-full top-0 z-50">
       <nav
         class="container mx-auto px-6 py-2 flex justify-between items-center"
@@ -306,7 +300,6 @@
             ¡Haz clic en uno para verlo en detalle!
           </p>
         </div>
-        <!-- Galería de Imágenes -->
         <div
           class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
         >
@@ -398,11 +391,9 @@
             ¡Haz clic en uno para verlo en detalle!
           </p>
         </div>
-        <!-- Galería de Imágenes -->
         <div
           class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
         >
-          <!-- Genera 15 imágenes de placeholder -->
           <a href="#" class="gallery-item"
             ><img
               src="./assets/img/accesorios/1.jpg"
@@ -425,7 +416,6 @@
       </div>
     </main>
 
-    <!-- Modal/Lightbox para imagen ampliada -->
     <div
       id="image-modal"
       class="modal-overlay fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-[100] hidden opacity-0"
@@ -446,7 +436,6 @@
       </div>
     </div>
 
-    <!-- =========== Botón Flotante de WhatsApp =========== -->
     <a
       href="#"
       id="floating-whatsapp-button"
@@ -455,13 +444,11 @@
       <i class="fab fa-whatsapp text-4xl"></i>
     </a>
 
-    <!-- =========== Footer =========== -->
     <footer class="bg-purple-900 text-white mt-12">
       <div class="container mx-auto px-6 py-12">
         <div
           class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
         >
-          <!-- Columna 1: Logo e Info -->
           <div class="flex flex-col items-center md:items-start">
             <img
               src="./assets/img/logo.png"
@@ -474,7 +461,6 @@
               Diseños únicos.<br />Hechos a mano en 🇨🇱
             </p>
           </div>
-          <!-- Columna 2: Links Rápidos -->
           <div>
             <h3 class="font-bold text-lg mb-4">Links Rápidos</h3>
             <ul>
@@ -515,33 +501,16 @@
               </li>
             </ul>
           </div>
-          <!-- Columna 3: Redes Sociales -->
           <div>
             <h3 class="font-bold text-lg mb-4">Síguenos</h3>
             <div class="flex justify-center md:justify-start space-x-6">
               <a
-                href="#"
+                href="https://www.instagram.com/korona.cl/"
                 target="_blank"
                 class="text-purple-300 hover:text-white transition-transform transform hover:scale-125"
                 aria-label="Instagram"
               >
                 <i class="fab fa-instagram text-2xl"></i>
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                class="text-purple-300 hover:text-white transition-transform transform hover:scale-125"
-                aria-label="Facebook"
-              >
-                <i class="fab fa-facebook text-2xl"></i>
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                class="text-purple-300 hover:text-white transition-transform transform hover:scale-125"
-                aria-label="TikTok"
-              >
-                <i class="fab fa-tiktok text-2xl"></i>
               </a>
             </div>
           </div>
@@ -563,7 +532,6 @@
       </div>
     </footer>
 
-    <!-- =========== JavaScript =========== -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         // --- Set Copyright Year ---
@@ -607,7 +575,7 @@
         });
 
         // --- Botón Flotante WhatsApp ---
-        const phoneNumber = "56912345678"; // IMPORTANTE: Reemplazar con tu número
+        const phoneNumber = "56947486520";
         document
           .getElementById("floating-whatsapp-button")
           .addEventListener("click", function (e) {

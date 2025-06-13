@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Korona - Estilo y Diseño Único</title>
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,13 +14,11 @@
       rel="stylesheet"
     />
 
-    <!-- Animate.css para animaciones -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <!-- Font Awesome para íconos -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -31,14 +27,13 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Estilos personalizados -->
     <style>
       body {
         font-family: "Poppins", sans-serif;
       }
       /* Clases para la transición del carrusel */
       .carousel-item {
-        transition: transform 0.5s ease-in-out;
+        transition: opacity 0.8s ease-in-out;
       }
       .text-shadow {
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -154,10 +149,13 @@
         border-radius: 0;
         transform: rotate(45deg);
       }
+
+      .nosotros {
+        border: 3px solid #f472b6;
+      }
     </style>
   </head>
   <body class="bg-pink-50 text-gray-800">
-    <!-- =========== Header / Navegación =========== -->
     <header id="header" class="bg-white shadow-md fixed w-full top-0 z-50">
       <nav
         class="container mx-auto px-6 py-2 flex justify-between items-center"
@@ -241,10 +239,8 @@
     </header>
 
     <main class="pt-12">
-      <!-- =========== Hero Section con Carrusel =========== -->
       <section id="hero" class="relative w-full h-screen overflow-hidden">
         <div id="hero-carousel" class="relative h-full">
-          <!-- Slide 1 -->
           <div
             class="carousel-item absolute w-full h-full bg-cover bg-center"
             style="background-image: url('./assets/img/hero_1.jpg')"
@@ -271,7 +267,6 @@
               </div>
             </div>
           </div>
-          <!-- Slide 2 -->
           <div
             class="carousel-item absolute w-full h-full bg-cover bg-center"
             style="background-image: url('./assets/img/hero_2.jpg')"
@@ -290,13 +285,12 @@
                 </p>
                 <a
                   href="#productos"
-                  class="nav-link mt-8 inline-block bg-white text-pink-500 hover:bg-gray-200 font-bold py-3 px-8 rounded-full transition duration-300"
+                  class="nav-link mt-8 inline-block bg-white text-pink-500 hover:bg-gray-200 font-bold py-3 px-8 rounded-full transition duration-300 animate__animated animate__pulse animate__delay-2s animate__infinite"
                   >Ver Diseños</a
                 >
               </div>
             </div>
           </div>
-          <!-- Slide 3 -->
           <div
             class="carousel-item absolute w-full h-full bg-cover bg-center"
             style="background-image: url('./assets/img/hero_3.jpg')"
@@ -315,7 +309,7 @@
                 </p>
                 <a
                   href="#quienes-somos"
-                  class="nav-link mt-8 inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-8 rounded-full transition duration-300"
+                  class="nav-link mt-8 inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 animate__animated animate__pulse animate__delay-2s animate__infinite"
                   >Conócenos</a
                 >
               </div>
@@ -324,7 +318,7 @@
         </div>
         <button
           id="prevBtn"
-          class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 p-2 rounded-full z-10"
+          class="hidden md:flex absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 p-2 rounded-full z-10"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -343,7 +337,7 @@
         </button>
         <button
           id="nextBtn"
-          class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 p-2 rounded-full z-10"
+          class="hidden md:flex absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 p-2 rounded-full z-10"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -362,15 +356,12 @@
         </button>
       </section>
 
-      <!-- =========== Banner Oferta Maskarillas =========== -->
       <section
         class="py-12 bg-pink-200 scroll-animate glitter-container"
         data-animation="animate__pulse"
       >
-        <!-- Capa de glitter -->
         <div class="glitter-layer"></div>
 
-        <!-- Tu contenido original con clase glitter-content -->
         <div class="container mx-auto px-6 text-center glitter-content">
           <h2 class="text-2xl md:text-3xl font-bold text-purple-700 mb-2">
             ¡Oferta Especial en Maskarillas!
@@ -387,7 +378,6 @@
         </div>
       </section>
 
-      <!-- =========== Quiénes Somos =========== -->
       <section id="quienes-somos" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-6">
           <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -399,10 +389,11 @@
                 Nuestra Historia
               </h2>
               <p class="text-lg text-gray-600 mb-4">
-                Somos Korona, un grupo de amigas de entre 15 y 20 años unidas
-                por una pasión: el diseño y la moda. Lo que empezó como un
-                pasatiempo creando accesorios para nosotras, se convirtió en un
-                sueño por compartir nuestro estilo.
+                Korona nació en plena pandemia, cuando decidimos emprender ante
+                la escasez de mascarillas y la falta de diseños originales en el
+                mercado. Lo que comenzó como una solución a una necesidad, se
+                transformó en un proyecto lleno de creatividad y estilo, pensado
+                para quienes buscan protegerse sin perder su personalidad.
               </p>
               <p class="text-gray-600">
                 Cada producto que ves aquí está hecho con amor, pensando en
@@ -413,16 +404,15 @@
             </div>
             <div class="scroll-animate" data-animation="animate__fadeInRight">
               <img
-                src="https://placehold.co/600x400/fecdd3/be185d?text=Nosotras"
+                src="./assets/img/korona.png"
                 alt="[Imagen del equipo de Korona]"
-                class="rounded-lg shadow-xl w-full"
+                class="rounded-lg shadow-xl w-full nosotros"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <!-- =========== Banner de Envíos =========== -->
       <section
         class="py-12 bg-purple-700 text-white scroll-animate"
         data-animation="animate__fadeIn"
@@ -435,7 +425,7 @@
             Envíos por pagar vía Starken, Chilexpress y Correos de Chile.
           </p>
           <a
-            href="#"
+            href="https://personas.chilexpress.cl/cotizar"
             class="inline-block bg-white text-purple-700 font-bold py-3 px-8 rounded-full transition duration-300 hover:bg-gray-200"
             >Calcula tu Envío</a
           >
@@ -447,7 +437,6 @@
         </div>
       </section>
 
-      <!-- =========== Nuestros Productos =========== -->
       <section id="productos" class="py-16 md:py-24">
         <div class="container mx-auto px-6">
           <div
@@ -462,7 +451,6 @@
             </p>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Producto: Maskarilla -->
             <div
               class="bg-white rounded-lg shadow-lg overflow-hidden group flex flex-col scroll-animate"
               data-animation="animate__fadeInUp"
@@ -512,7 +500,6 @@
                 >
               </div>
             </div>
-            <!-- Producto: Maskecuello -->
             <div
               class="bg-white rounded-lg shadow-lg overflow-hidden group flex flex-col scroll-animate"
               data-animation="animate__fadeInUp"
@@ -555,7 +542,6 @@
                 >
               </div>
             </div>
-            <!-- Producto: Ajuste Orejas -->
             <div
               class="bg-white rounded-lg shadow-lg overflow-hidden group flex flex-col scroll-animate"
               data-animation="animate__fadeInUp"
@@ -598,7 +584,6 @@
                 >
               </div>
             </div>
-            <!-- Producto: Soporte Nasal -->
             <div
               class="bg-white rounded-lg shadow-lg overflow-hidden group flex flex-col scroll-animate"
               data-animation="animate__fadeInUp"
@@ -647,7 +632,6 @@
         </div>
       </section>
 
-      <!-- =========== Contacto =========== -->
       <section id="contacto" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-6">
           <div
@@ -699,7 +683,6 @@
       </section>
     </main>
 
-    <!-- =========== Botón Flotante de WhatsApp =========== -->
     <a
       href="#"
       id="floating-whatsapp-button"
@@ -708,13 +691,11 @@
       <i class="fab fa-whatsapp text-4xl"></i>
     </a>
 
-    <!-- =========== Footer =========== -->
     <footer class="bg-purple-900 text-white">
       <div class="container mx-auto px-6 py-12">
         <div
           class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
         >
-          <!-- Columna 1: Logo e Info -->
           <div class="flex flex-col items-center md:items-start">
             <img
               src="./assets/img/logo.png"
@@ -727,7 +708,6 @@
               Diseños únicos.<br />Hechos a mano en 🇨🇱
             </p>
           </div>
-          <!-- Columna 2: Links Rápidos -->
           <div>
             <h3 class="font-bold text-lg mb-4">Links Rápidos</h3>
             <ul>
@@ -769,33 +749,16 @@
               </li>
             </ul>
           </div>
-          <!-- Columna 3: Redes Sociales -->
           <div>
             <h3 class="font-bold text-lg mb-4">Síguenos</h3>
             <div class="flex justify-center md:justify-start space-x-6">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/korona.cl/"
                 target="_blank"
                 class="text-purple-300 hover:text-white transition-transform transform hover:scale-125"
                 aria-label="Instagram"
               >
                 <i class="fab fa-instagram text-2xl"></i>
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                class="text-purple-300 hover:text-white transition-transform transform hover:scale-125"
-                aria-label="Facebook"
-              >
-                <i class="fab fa-facebook text-2xl"></i>
-              </a>
-              <a
-                href="https://tiktok.com"
-                target="_blank"
-                class="text-purple-300 hover:text-white transition-transform transform hover:scale-125"
-                aria-label="TikTok"
-              >
-                <i class="fab fa-tiktok text-2xl"></i>
               </a>
             </div>
           </div>
@@ -817,10 +780,8 @@
       </div>
     </footer>
 
-    <!-- =========== JavaScript =========== -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // --- Set Copyright Year ---
         document.getElementById("copyright-year").textContent =
           new Date().getFullYear();
 
@@ -860,11 +821,9 @@
 
         function updateCarousel() {
           slides.forEach((slide, index) => {
-            slide.style.transform = `translateX(${
-              (index - currentSlide) * 100
-            }%)`;
+            // Removí el transform, solo uso opacity
             slide.style.opacity = index === currentSlide ? "1" : "0";
-            slide.style.zIndex = index === currentSlide ? "1" : "0";
+            slide.style.zIndex = index === currentSlide ? "2" : "1";
           });
         }
 
@@ -900,7 +859,7 @@
         });
 
         // --- Lógica de Botones WhatsApp ---
-        const phoneNumber = "56912345678"; // IMPORTANTE: Reemplazar con tu número
+        const phoneNumber = "56947486520";
 
         // Para botones de productos
         document
@@ -931,19 +890,16 @@
             window.open(whatsappUrl, "_blank");
           });
       });
-    </script>
-    <script>
+
       class GlitterEffect {
         constructor(container, options = {}) {
           this.container = container;
           this.glitterLayer = container.querySelector(".glitter-layer");
 
-          // CONFIGURACIÓN - Modifica estos valores según tus necesidades
           this.options = {
-            particleCount: options.particleCount || 60, // Número de partículas (muchas partículas)
-            spawnRate: options.spawnRate || 300, // Velocidad de aparición rápida en ms
+            particleCount: options.particleCount || 60,
+            spawnRate: options.spawnRate || 300,
             colors: options.colors || [
-              // Colores de las partículas
               "#fff",
               "#ffd700",
               "#ff69b4",
@@ -953,10 +909,10 @@
               "#ff4500",
               "#9400d3",
             ],
-            shapes: options.shapes || ["star"], // Formas: 'circle', 'star', 'diamond'
-            sizes: options.sizes || ["small", "medium", "large"], // Tamaños disponibles
-            animationDuration: options.animationDuration || 8000, // Duración larga de animación (8 segundos)
-            intensity: options.intensity || 2, // Intensidad alta
+            shapes: options.shapes || ["star"],
+            sizes: options.sizes || ["small", "medium", "large"],
+            animationDuration: options.animationDuration || 8000,
+            intensity: options.intensity || 2,
           };
 
           this.particles = [];
@@ -1061,20 +1017,16 @@
         }
       }
 
-      // AUTO-INICIALIZACIÓN
-      // Busca automáticamente todos los elementos con clase 'glitter-container' y les aplica el efecto
       document.addEventListener("DOMContentLoaded", function () {
         const glitterContainers =
           document.querySelectorAll(".glitter-container");
 
         glitterContainers.forEach((container) => {
-          // CONFIGURACIÓN POR DEFECTO - Muchas partículas que duran mucho tiempo
           new GlitterEffect(container, {
-            particleCount: 80, // Muchas partículas: 60=muchas, 80=abundantes, 100=lleno
-            spawnRate: 200, // Aparición muy rápida: 200=muy rápido, 300=rápido, 500=normal
-            intensity: 2, // Intensidad alta: 2=alta, 2.5=muy alta, 3=máxima
+            particleCount: 80,
+            spawnRate: 200,
+            intensity: 2,
             colors: [
-              // Personaliza los colores aquí
               "#fff",
               "#ffd700",
               "#ff69b4",
@@ -1088,15 +1040,13 @@
               "#87ceeb",
               "#dda0dd",
             ],
-            shapes: ["star"], // Formas: 'circle', 'star', 'diamond'
-            sizes: ["small", "medium", "large"], // Todos los tamaños para más variedad
+            shapes: ["star"],
+            sizes: ["small", "medium", "large"],
           });
         });
       });
 
-      // Cleanup cuando la página se cierra
       window.addEventListener("beforeunload", () => {
-        // Limpiar todos los intervalos activos
         const containers = document.querySelectorAll(".glitter-container");
         containers.forEach((container) => {
           if (container.glitterEffect) {

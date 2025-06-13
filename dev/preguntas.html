@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Preguntas Frecuentes - Korona</title>
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +14,6 @@
       rel="stylesheet"
     />
 
-    <!-- Font Awesome para íconos -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -25,15 +22,16 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Estilos personalizados -->
     <style>
       body {
         font-family: "Poppins", sans-serif;
       }
+      .nosotros {
+        border: 3px solid #f472b6;
+      }
     </style>
   </head>
   <body class="bg-pink-50 text-gray-800">
-    <!-- =========== Header / Navegación =========== -->
     <header id="header" class="bg-white shadow-md fixed w-full top-0 z-50">
       <nav
         class="container mx-auto px-6 py-2 flex justify-between items-center"
@@ -48,7 +46,9 @@
           <span class="text-3xl font-bold text-pink-500">Korona</span>
         </a>
         <div class="hidden md:flex space-x-8">
-          <a href="./index.html" class="text-gray-600 hover:text-pink-500 nav-link"
+          <a
+            href="./index.html"
+            class="text-gray-600 hover:text-pink-500 nav-link"
             >Inicio</a
           >
           <a
@@ -127,7 +127,6 @@
         </h1>
 
         <div class="max-w-4xl mx-auto space-y-12">
-          <!-- Sección 1: Cómo Comprar -->
           <section id="como-comprar">
             <h2
               class="text-2xl font-bold text-purple-700 mb-6 border-l-4 border-pink-500 pl-4"
@@ -138,38 +137,20 @@
               <ol class="list-decimal list-inside space-y-4 text-gray-700">
                 <li>
                   <span class="font-semibold">Elige tu diseño favorito</span>
-                  desde nuestra galería de géneros. ¡Tenemos muchos estilos para
-                  ti!
-                  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
-                    <img
-                      src="https://placehold.co/300x300/e2e8f0/4a5568?text=Estrellas"
-                      alt="[Género con estrellas]"
-                      class="rounded-lg object-cover w-full h-32"
-                    />
-                    <img
-                      src="https://placehold.co/300x300/4a5568/e2e8f0?text=Calaveras"
-                      alt="[Género con calaveras]"
-                      class="rounded-lg object-cover w-full h-32"
-                    />
-                    <img
-                      src="https://placehold.co/300x300/fecdd3/86198f?text=Lunares"
-                      alt="[Género con lunares]"
-                      class="rounded-lg object-cover w-full h-32"
-                    />
-                    <img
-                      src="https://placehold.co/300x300/f59e0b/422006?text=Leopardo"
-                      alt="[Género de leopardo]"
-                      class="rounded-lg object-cover w-full h-32"
-                    />
-                  </div>
+                  desde nuestra <a href="./stock.html"><u>página de stock</u></a
+                  >. ¡Tenemos muchos estilos para ti!
                 </li>
                 <li>
                   <span class="font-semibold">Envíanos un pantallazo</span> por
-                  <a href="#" class="text-pink-500 font-bold hover:underline"
+                  <a
+                    href="https://www.instagram.com/korona.cl/"
+                    class="text-pink-500 font-bold hover:underline"
                     >Instagram</a
                   >
                   o
-                  <a href="#" class="text-green-500 font-bold hover:underline"
+                  <a
+                    href="https://wa.me/56947486520"
+                    class="text-green-500 font-bold hover:underline"
                     >WhatsApp</a
                   >
                   para confirmar el stock del diseño que quieres.
@@ -187,7 +168,6 @@
             </div>
           </section>
 
-          <!-- Sección 2: Envíos -->
           <section id="envios">
             <h2
               class="text-2xl font-bold text-purple-700 mb-6 border-l-4 border-pink-500 pl-4"
@@ -217,23 +197,24 @@
                 <p class="font-bold">⚠️ ¡Atención! TODO ENVÍO ES POR PAGAR.</p>
               </div>
               <div class="flex flex-col md:flex-row gap-4 mt-6">
-                <button
+                <a
+                  href="https://www.starken.cl/cotizador"
                   class="flex-1 bg-green-600 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center space-x-2 hover:bg-green-700 transition-all"
                 >
                   <i class="fas fa-truck"></i>
                   <span>Cotizar en Starken</span>
-                </button>
-                <button
+                </a>
+                <a
+                  href="https://personas.chilexpress.cl/cotizar"
                   class="flex-1 bg-blue-600 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center space-x-2 hover:bg-blue-700 transition-all"
                 >
                   <i class="fas fa-truck"></i>
                   <span>Cotizar en Chilexpress</span>
-                </button>
+                </a>
               </div>
             </div>
           </section>
 
-          <!-- Sección 3: Devoluciones -->
           <section id="devoluciones">
             <h2
               class="text-2xl font-bold text-purple-700 mb-6 border-l-4 border-pink-500 pl-4"
@@ -255,15 +236,14 @@
               </p>
               <div class="max-w-xs mx-auto">
                 <img
-                  src="https://placehold.co/400x400/fef08a/000000?text=LA+SEGURIDAD+PRIMERO"
+                  src="./assets/img/devolucion.png"
                   alt="[Señal de advertencia: La seguridad primero]"
-                  class="rounded-lg shadow-lg"
+                  class="rounded-lg shadow-lg nosotros"
                 />
               </div>
             </div>
           </section>
 
-          <!-- Sección 4: Formas de Pago -->
           <section id="pagos">
             <h2
               class="text-2xl font-bold text-purple-700 mb-6 border-l-4 border-pink-500 pl-4"
@@ -298,22 +278,19 @@
       </div>
     </main>
 
-    <!-- =========== Botón Flotante de WhatsApp =========== -->
-<a
-  href="#"
-  id="floating-whatsapp-button"
-  class="fixed bottom-5 right-5 z-50 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110 animate__animated animate__fadeInUp animate__delay-2s"
->
+    <a
+      href="#"
+      id="floating-whatsapp-button"
+      class="fixed bottom-5 right-5 z-50 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110 animate__animated animate__fadeInUp animate__delay-2s"
+    >
       <i class="fab fa-whatsapp text-4xl"></i>
     </a>
 
-    <!-- =========== Footer =========== -->
     <footer class="bg-purple-900 text-white mt-12">
       <div class="container mx-auto px-6 py-12">
         <div
           class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
         >
-          <!-- Columna 1: Logo e Info -->
           <div class="flex flex-col items-center md:items-start">
             <img
               src="./assets/img/logo.png"
@@ -323,10 +300,9 @@
             />
             <h3 class="text-2xl font-bold mb-2">Korona</h3>
             <p class="text-purple-300">
-              Diseños únicos.<br>Hechos a mano en 🇨🇱
+              Diseños únicos.<br />Hechos a mano en 🇨🇱
             </p>
           </div>
-          <!-- Columna 2: Links Rápidos -->
           <div>
             <h3 class="font-bold text-lg mb-4">Links Rápidos</h3>
             <ul>
@@ -367,33 +343,16 @@
               </li>
             </ul>
           </div>
-          <!-- Columna 3: Redes Sociales -->
           <div>
             <h3 class="font-bold text-lg mb-4">Síguenos</h3>
             <div class="flex justify-center md:justify-start space-x-6">
               <a
-                href="#"
+                href="https://www.instagram.com/korona.cl/"
                 target="_blank"
                 class="text-purple-300 hover:text-white transition-transform transform hover:scale-125"
                 aria-label="Instagram"
               >
                 <i class="fab fa-instagram text-2xl"></i>
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                class="text-purple-300 hover:text-white transition-transform transform hover:scale-125"
-                aria-label="Facebook"
-              >
-                <i class="fab fa-facebook text-2xl"></i>
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                class="text-purple-300 hover:text-white transition-transform transform hover:scale-125"
-                aria-label="TikTok"
-              >
-                <i class="fab fa-tiktok text-2xl"></i>
               </a>
             </div>
           </div>
@@ -415,7 +374,6 @@
       </div>
     </footer>
 
-    <!-- =========== JavaScript =========== -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         // --- Set Copyright Year ---
@@ -430,7 +388,7 @@
         });
 
         // --- Botón Flotante WhatsApp ---
-        const phoneNumber = "56912345678"; // IMPORTANTE: Reemplazar con tu número
+        const phoneNumber = "56947486520";
         document
           .getElementById("floating-whatsapp-button")
           .addEventListener("click", function (e) {
