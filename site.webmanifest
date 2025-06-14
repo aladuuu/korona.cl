@@ -3,6 +3,7 @@
   "short_name": "Korona",
   "description": "Maskarillas y accesorios únicos. Hechos a mano en Chile.",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#fdf2f8",
   "theme_color": "#ec4899",
