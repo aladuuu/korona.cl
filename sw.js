@@ -11,7 +11,7 @@ const urlsToCache = [
   './assets/img/devolucion.webp',
   './assets/icons/icon-192x192.png',
   './assets/icons/icon-512x512.png',
-  'https://cdn.tailwindcss.com',
+  './assets/js/tailwind.js',
   'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap',
   'https://fonts.gstatic.com',
   'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css',
