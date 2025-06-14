@@ -1,164 +1,197 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Korona - Estilo y Diseño Único</title>
-  <meta name="description" content="Korona.cl ofrece maskarillas, maskecuellos y accesorios con diseños vibrantes y únicos. Hechos a mano en Chile, pensados para destacar tu estilo." />
-  <meta name="keywords" content="maskarillas, accesorios, maskecuellos, Korona, diseño chileno, productos hechos a mano, tienda joven, diseño con estilo" />
-  <meta name="author" content="Korona.cl" />
-  <meta name="robots" content="index, follow" />
-  <meta name="language" content="es" />
-  <link rel="canonical" href="https://korona.cl/" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Korona - Estilo y Diseño Único</title>
+    <meta
+      name="description"
+      content="Korona.cl ofrece maskarillas, maskecuellos y accesorios con diseños vibrantes y únicos. Hechos a mano en Chile, pensados para destacar tu estilo."
+    />
+    <meta
+      name="keywords"
+      content="maskarillas, accesorios, maskecuellos, Korona, diseño chileno, productos hechos a mano, tienda joven, diseño con estilo"
+    />
+    <meta name="author" content="Korona.cl" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="es" />
+    <link rel="canonical" href="https://korona.cl/" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_CL" />
-  <meta property="og:url" content="https://korona.cl/" />
-  <meta property="og:title" content="Korona - Estilo y Diseño Único" />
-  <meta property="og:description" content="Maskarillas y accesorios hechos a mano para expresarte con estilo. Envíos a todo Chile." />
-  <meta property="og:image" content="https://korona.cl/assets/img/og-image.png" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CL" />
+    <meta property="og:url" content="https://korona.cl/" />
+    <meta property="og:title" content="Korona - Estilo y Diseño Único" />
+    <meta
+      property="og:description"
+      content="Maskarillas y accesorios hechos a mano para expresarte con estilo. Envíos a todo Chile."
+    />
+    <meta
+      property="og:image"
+      content="https://korona.cl/assets/img/og-image.png"
+    />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Korona - Estilo y Diseño Único" />
-  <meta name="twitter:description" content="Maskarillas y accesorios hechos a mano para expresarte con estilo. Envíos a todo Chile." />
-  <meta name="twitter:image" content="https://korona.cl/assets/img/og-image.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Korona - Estilo y Diseño Único" />
+    <meta
+      name="twitter:description"
+      content="Maskarillas y accesorios hechos a mano para expresarte con estilo. Envíos a todo Chile."
+    />
+    <meta
+      name="twitter:image"
+      content="https://korona.cl/assets/img/og-image.png"
+    />
 
-  <!-- Favicon -->
-  <link rel="icon" href="https://korona.cl/assets/img/favicon.ico" type="image/x-icon" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://korona.cl/assets/img/favicon.ico"
+      type="image/x-icon"
+    />
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts: Poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Animate.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- PWA Manifest y color -->
-  <link rel="manifest" href="/site.webmanifest" />
-  <meta name="theme-color" content="#ec4899" />
+    <!-- PWA Manifest y color -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#ec4899" />
 
-  <!-- CSS Personalizado -->
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-    }
-    .carousel-item {
-      transition: opacity 0.8s ease-in-out;
-    }
-    .text-shadow {
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-    .scroll-animate {
-      opacity: 0;
-    }
-    .glitter-container {
-      position: relative;
-      overflow: hidden;
-    }
-    .glitter-layer {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      pointer-events: none;
-      z-index: 1;
-    }
-    .glitter-content {
-      position: relative;
-      z-index: 2;
-    }
-    .glitter-particle {
-      position: absolute;
-      width: 4px;
-      height: 4px;
-      background: linear-gradient(45deg, #fff, #ffd700, #ff69b4, #00ffff);
-      border-radius: 50%;
-      opacity: 0;
-      animation: glitterAnimation 3s infinite;
-    }
-    .glitter-particle:nth-child(odd) {
-      animation-delay: 0.5s;
-    }
-    .glitter-particle:nth-child(3n) {
-      animation-delay: 1s;
-      background: linear-gradient(45deg, #ff1493, #00ff00, #ffd700);
-    }
-    .glitter-particle:nth-child(4n) {
-      animation-delay: 1.5s;
-      background: linear-gradient(45deg, #ff4500, #9400d3, #00bfff);
-    }
-    .glitter-particle:nth-child(5n) {
-      animation-delay: 2s;
-      background: linear-gradient(45deg, #32cd32, #ff6347, #dda0dd);
-    }
-    @keyframes glitterAnimation {
-      0% {
+    <!-- CSS Personalizado -->
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .carousel-item {
+        transition: opacity 0.8s ease-in-out;
+      }
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .scroll-animate {
         opacity: 0;
-        transform: scale(0) rotate(0deg);
       }
-      10% {
-        opacity: 0.8;
-        transform: scale(1) rotate(90deg);
+      .glitter-container {
+        position: relative;
+        overflow: hidden;
       }
-      50% {
-        opacity: 1;
-        transform: scale(1.2) rotate(180deg);
+      .glitter-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        z-index: 1;
       }
-      90% {
-        opacity: 0.8;
-        transform: scale(1) rotate(450deg);
+      .glitter-content {
+        position: relative;
+        z-index: 2;
       }
-      100% {
+      .glitter-particle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: linear-gradient(45deg, #fff, #ffd700, #ff69b4, #00ffff);
+        border-radius: 50%;
         opacity: 0;
-        transform: scale(0) rotate(540deg);
+        animation: glitterAnimation 3s infinite;
       }
-    }
-    .glitter-particle.small {
-      width: 2px;
-      height: 2px;
-    }
-    .glitter-particle.medium {
-      width: 3px;
-      height: 3px;
-    }
-    .glitter-particle.large {
-      width: 6px;
-      height: 6px;
-    }
-    .glitter-particle.star {
-      border-radius: 0;
-      clip-path: polygon(
-        50% 0%,
-        61% 35%,
-        98% 35%,
-        68% 57%,
-        79% 91%,
-        50% 70%,
-        21% 91%,
-        32% 57%,
-        2% 35%,
-        39% 35%
-      );
-    }
-    .glitter-particle.diamond {
-      border-radius: 0;
-      transform: rotate(45deg);
-    }
-    .nosotros {
-      border: 3px solid #f472b6;
-    }
-  </style>
-</head>
+      .glitter-particle:nth-child(odd) {
+        animation-delay: 0.5s;
+      }
+      .glitter-particle:nth-child(3n) {
+        animation-delay: 1s;
+        background: linear-gradient(45deg, #ff1493, #00ff00, #ffd700);
+      }
+      .glitter-particle:nth-child(4n) {
+        animation-delay: 1.5s;
+        background: linear-gradient(45deg, #ff4500, #9400d3, #00bfff);
+      }
+      .glitter-particle:nth-child(5n) {
+        animation-delay: 2s;
+        background: linear-gradient(45deg, #32cd32, #ff6347, #dda0dd);
+      }
+      @keyframes glitterAnimation {
+        0% {
+          opacity: 0;
+          transform: scale(0) rotate(0deg);
+        }
+        10% {
+          opacity: 0.8;
+          transform: scale(1) rotate(90deg);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.2) rotate(180deg);
+        }
+        90% {
+          opacity: 0.8;
+          transform: scale(1) rotate(450deg);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0) rotate(540deg);
+        }
+      }
+      .glitter-particle.small {
+        width: 2px;
+        height: 2px;
+      }
+      .glitter-particle.medium {
+        width: 3px;
+        height: 3px;
+      }
+      .glitter-particle.large {
+        width: 6px;
+        height: 6px;
+      }
+      .glitter-particle.star {
+        border-radius: 0;
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+      }
+      .glitter-particle.diamond {
+        border-radius: 0;
+        transform: rotate(45deg);
+      }
+      .nosotros {
+        border: 3px solid #f472b6;
+      }
+    </style>
+  </head>
 
   <body class="bg-pink-50 text-gray-800">
     <header id="header" class="bg-white shadow-md fixed w-full top-0 z-50">
@@ -633,7 +666,7 @@
         </div>
       </section>
 
-      <section id="contacto" class="py-16 md:py-24 bg-white">
+      <section id="contacto" class="py-24 bg-white">
         <div class="container mx-auto px-6">
           <div
             class="text-center mb-12 scroll-animate"
@@ -871,7 +904,7 @@
               const card = this.closest(".group");
               const productName = card.querySelector("h3").innerText;
               const quantity = card.querySelector('input[type="number"]').value;
-              const message = `¡Hola Korona! Me interesa comprar:\n\n*Producto:* ${productName}\n*Cantidad:* ${quantity}\n\nQuedo a la espera de su respuesta. ¡Gracias! 😊`;
+              const message = `¡Hola Korona! Me interesa comprar:\n\n*Producto:* ${productName}\n*Cantidad:* ${quantity}\n\nQuedo a la espera de su respuesta. ¡Gracias!`;
               const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
                 message
               )}`;
@@ -890,6 +923,27 @@
             )}`;
             window.open(whatsappUrl, "_blank");
           });
+
+        // --- Formulario de Contacto a WhatsApp ---
+        const contactForm = document.querySelector("#contacto form");
+        contactForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = contactForm
+            .querySelector('input[type="text"]')
+            .value.trim();
+          const email = contactForm
+            .querySelector('input[type="email"]')
+            .value.trim();
+          const message = contactForm.querySelector("textarea").value.trim();
+
+          const fullMessage = `Hola Korona, tengo una consulta:\n\n*Nombre:* ${name}\n*Email:* ${email}\n*Mensaje:* ${message}\n\n¡Gracias! 😊`;
+
+          const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+            fullMessage
+          )}`;
+          window.open(whatsappUrl, "_blank");
+        });
       });
 
       class GlitterEffect {
