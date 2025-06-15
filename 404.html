@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://korona.cl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="5; url=https://korona.cl" />
     <title>404 - Página no encontrada</title>
-</head>
-<body>
-    <h1>404 - Página no encontrada</h1>
-    <p>Si no eres redirigido, <a href="https://korona.cl">haz clic aquí</a>.</p>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      a {
+        color: #d63384;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #fff0f5;
+        color: #333;
+        text-align: center;
+        padding: 2rem;
+      }
+      h1 {
+        font-size: 2.5rem;
+        color: #d63384;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      .nosotros {
+        border: 3px solid #f472b6;
+      }
+      .error {
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <img
+            src="https://korona.cl/assets/img/404.webp"
+            alt="Korona 404"
+            class="error nosotros"
+        />
+      <h1>404 - Página no encontrada</h1>
+      <p>
+        Si no eres redirigido, <a href="https://korona.cl">haz clic aquí</a>.
+      </p>
+    </main>
     <script>
-        setTimeout(function() {
-            window.location.href = "https://korona.cl";
-        }, 0);
+      setTimeout(function () {
+        window.location.href = "https://korona.cl";
+      }, 5000);
     </script>
-</body>
+  </body>
 </html>

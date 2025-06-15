@@ -12,10 +12,8 @@ const urlsToCache = [
   './assets/icons/icon-192x192.png',
   './assets/icons/icon-512x512.png',
   './assets/js/tailwind.js',
-  'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap',
-  'https://fonts.gstatic.com',
-  'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'
+  './assets/css/animate.css',
+  './assets/fontawesome/css/all.min.css'
 ];
 
 self.addEventListener('install', event => {
